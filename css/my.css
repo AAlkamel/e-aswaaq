@@ -658,7 +658,7 @@ section:nth-of-type(6) {
 	.s7 .img {
 		width: 100%;
 		z-index: -1;
-		opacity: 0.3;
+		opacity: 0.12;
 	}
 	.s7.cs2 {
 		background-color: transparent;
