@@ -655,4 +655,28 @@ section:nth-of-type(6) {
 	.header {
 		height: auto;
 	}
+	.s7 .img {
+		width: 100%;
+		z-index: -1;
+		opacity: 0.3;
+	}
+	.s7.cs2 {
+		background-color: transparent;
+	}
+	.s7.cs3 {
+		background-color: transparent;
+	}
+	.s7 h4 {
+		padding: 0;
+	}
+	.s7.s7.cs2 h4 {
+		padding: 0;
+	}
+	.s7 .row {
+		height: 270px;
+	}
+	.s7 {
+		height: 270px;
+		border-bottom: solid 1px #8b2893;
+	}
 }
