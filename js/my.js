@@ -67,6 +67,7 @@ let t2 = gsap.timeline({
 });
 t2.from('.grid-container',{x:20, y:30, opacity:0, stagger:0.1, duration:0.8})
     .from('.gridi',{x:-20, opacity:0, stagger:0.1, duration:1},'-=0.5')
+    .from('.pr .but.mo',{y:20, opacity:0, duration:0.8},'-=2')
     
 let t3 = gsap.timeline({
     scrollTrigger:{
