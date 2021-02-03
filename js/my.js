@@ -26,7 +26,8 @@ $( document ).ready(function() {
     //-------------------------------------------------------
     $(".ts-bx > span a").on("click",function(e){
         e.preventDefault();
-        $(".op").toggle();
+       // $(".op").hide();
+        $(this).parent().next().toggle();
     });
     $(document).on("click",function(){
         $(".op").hide();
@@ -36,13 +37,19 @@ $( document ).ready(function() {
         
     });
     //---------------------------------------------
+    //-------------------------------------------------------
+    $(".ts-bx-m > a").on("click",function(e){
+        e.preventDefault();
+        $(this).next().slideToggle();
+    });
+    //---------------------------------------------
 
 });
 
 $(window).on("load",function(){
     $(".loader-wrapper").delay(500).fadeOut();
 
-});
+
 
 
 
@@ -121,7 +128,22 @@ let t8 = gsap.timeline({
 t8.from('.cs3 .img',{y:20, opacity:0, duration:0.8})
   .from('.cs3 h4',{y:30, opacity:0, duration:0.8})
 
+let t9 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.sap',
+        start: 'center bottom'
+    }
+});
+t9.from('.login-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
+let t10 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.signup',
+        start: 'center bottom'
+    }
+});
+t10.from('.signup-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
 
+});
 // gsap.from(".box", {
 //     scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
 //     x: 500
