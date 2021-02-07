@@ -21,13 +21,13 @@ input[type=submit] {
 
 .position-relative i {
 	position: absolute;
-	left: 0;
-	top: 0;
-	/* background-color: blue; */
-	height: 100%;
-	line-height: 33px;
-	width: 32px;
+	left: 0px;
+	top: 0px;
+	line-height: 30px;
+	width: 62px;
 	color: white;
+	border-radius: 3px 0 0 3px;
+	border-right: solid 1px #8b2893;
 }
 
 a {
@@ -289,6 +289,11 @@ ul li a:hover {
 	padding: 4px 10px;
 	background-color: transparent;
 	transition: ease-out .3s;
+}
+.con {
+	border: solid 1px #cac8c6;
+	backdrop-filter: blur(7px);
+	font-size: 15px;
 }
 .btn2:hover {
 	color: #8b2893;
