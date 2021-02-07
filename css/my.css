@@ -11,6 +11,25 @@
 	box-sizing: border-box;
 }
 
+.active {
+	display: block !important;
+}
+
+input[type=submit] {
+	cursor: pointer;
+}
+
+.position-relative i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	/* background-color: blue; */
+	height: 100%;
+	line-height: 33px;
+	width: 32px;
+	color: white;
+}
+
 a {
 	color: #8b2893;
 }
@@ -566,7 +585,7 @@ input::placeholder {
 	background-color: #fffdffcf;
 	right: 0;
 }
-.s7.cs2 .img::before {
+.s7.cs3 .img::before {
 	right: auto;
 	left: 0;
 }
@@ -602,7 +621,7 @@ input::placeholder {
 .s7.cs2 h4 {
 	padding: 0 104px 0 30px;
 }
-.s7.cs2 {
+.s7.cs3 {
 	direction: rtl; /* background-color: #ece6ef; */
 }
 /* -----------------------s4 end-------------------- */
@@ -743,13 +762,13 @@ input::placeholder {
 	padding: 0 75px;
 }
 .google {
-	color: #4286f5;
+	background-color: #4286f5;
 }
 .face {
-	color: #3b5999;
+	background-color: #3b5999;
 }
 .apple {
-	color: #606060;
+	background-color: #606060;
 }
 label {
 	color: #757575;

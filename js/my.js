@@ -24,13 +24,32 @@ $( document ).ready(function() {
         },400);
     });
     //-------------------------------------------------------
+    // $(".ts-bx > span a").on("click",function(e){
+    //     e.preventDefault();
+    //    // $(".op").hide();
+    //     $(this).parent().next().toggle();
+    // });
+    // $(document).on("click",function(){
+    //     $(".op").hide();
+    // });
+    // $('.ts-bx').on("click",function(e){
+    //     e.stopPropagation();
+        
+    // });
+
+
     $(".ts-bx > span a").on("click",function(e){
         e.preventDefault();
-       // $(".op").hide();
-        $(this).parent().next().toggle();
+        if( $(this).parent().next().hasClass('active')){
+            $(".op").removeClass('active');
+        }else{
+            $(".op").removeClass('active');
+            $(this).parent().next().addClass('active');
+        }
+        
     });
     $(document).on("click",function(){
-        $(".op").hide();
+        $(".op").removeClass('active');
     });
     $('.ts-bx').on("click",function(e){
         e.stopPropagation();
