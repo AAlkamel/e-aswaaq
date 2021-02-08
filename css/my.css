@@ -19,12 +19,82 @@ input[type=submit] {
 	cursor: pointer;
 }
 
+/*----------------chick---------------*/
+.contain {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmark {
+	background-color: #76037e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*----------------chick---------------*/
+
 .position-relative i {
+	text-align: center;
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	line-height: 30px;
-	width: 62px;
+	width: 48px;
 	color: white;
 	border-radius: 3px 0 0 3px;
 	border-right: solid 1px #8b2893;
@@ -290,6 +360,15 @@ ul li a:hover {
 	background-color: transparent;
 	transition: ease-out .3s;
 }
+input[type="checkbox" i] {
+	background-color: initial;
+	cursor: default;
+	appearance: auto;
+	box-sizing: border-box;
+	margin: 3px 3px 3px 4px;
+	padding: initial;
+	border: initial;
+}
 .con {
 	border: solid 1px #cac8c6;
 	backdrop-filter: blur(7px);
@@ -520,12 +599,14 @@ input::placeholder {
 	position: relative;
 }
 .ts-bx > span::before {
-	font-family: fontawesome;
-	content: "\f107";
+	content: "";
 	color: #f5e4f7;
 	position: absolute;
 	right: -3px;
-	top: 12px;
+	top: 19px;
+	border-top: 5px dashed;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
 }
 .ts-bx .op span:not(:last-child) {
 	border-bottom: dashed 1px #eee;
@@ -659,8 +740,8 @@ input::placeholder {
 	align-content: center;
 }
 .login .owl-carousel img {
-	max-width: 200px;
-	height: 200px;
+	max-width: 250px;
+	height: 250px;
 	object-fit: cover;
 	border-radius: 59%;
 	border: solid 2px #c784d6;
@@ -674,11 +755,11 @@ input::placeholder {
 .owl-carousel.owl-loaded {
 	display: flex;
 	padding-left: 20px;
-	padding-top: 100px;
+	padding-top: 130px;
 }
 .login .owl-carousel h3 {
 	padding: 0 80px;
-	padding-top: 250px;
+	padding-top: 300px;
 	color: #fcf0ff;
 	font-size: 16px;
 	line-height: 27px;
@@ -688,8 +769,29 @@ input::placeholder {
 	position: relative;
 	padding-top: 20px; /* height: 500px; */ /* padding: 124px 0 0 81px; */
 }
+.twasol {
+	margin-top: 127px;
+	border-right: solid 1px #bfbfbf;
+	padding: 10px 30px 6px 10px;
+	background-color: #ffffff1a;
+	border-radius: 6px 0px 0px 6px;
+}
+.twasol a {
+	text-align: left;
+	padding: 4px;
+	padding-left: 68px;
+	color: #909090;
+}
+.twasol span {
+	width: 99px; /* background-color: aquamarine; */
+	display: block;
+	text-align: center;
+}
+.form .row {
+	height: auto;
+}
 .login .form {
-	margin: 50px 120px;
+	margin: 100px 60px;
 	direction: rtl;
 }
 .login h2 {
@@ -842,8 +944,28 @@ label {
 	font-size: 15px;
 	color: #616161;
 }
+.form select {
+	position: absolute;
+	left: 0;
+	border: none;
+	height: 100%;
+	appearance: none;
+	padding: 0 5px;
+	background-color: transparent;
+	color: #868686;
+	font-size: 14px;
+	border-right: solid 1px #e6caf2;
+}
+.form select:focus {
+	outline-color: #bfa0c1;
+	outline: none;
+	background-color: #aeaeae1a;
+}
 /* ---------------------login end------------------------ */
 @media only screen and (max-width: 991px) {
+	.twasol {
+		margin-top: 21px;
+	}
 	.login .form {
 		margin: 81px 30px;
 	}
@@ -995,5 +1117,18 @@ label {
 		height: 100vh;
 		align-content: initial;
 		overflow: scroll;
+	}
+	.twasol {
+		margin-top: 12px;
+		border-right: none;
+		padding: 0;
+		background-color: transparent;
+		border-radius: 6px 0px 0px 6px;
+	}
+	.twasol .row {
+		height: auto;
+	}
+	.form .row {
+		height: auto;
 	}
 }
