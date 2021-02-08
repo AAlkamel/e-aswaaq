@@ -792,6 +792,7 @@ input::placeholder {
 }
 .login .form {
 	margin: 100px 60px;
+	margin-left: 0;
 	direction: rtl;
 }
 .login h2 {
