@@ -598,7 +598,7 @@ input::placeholder {
 	padding: 0 10px;
 	position: relative;
 }
-.ts-bx > span::before {
+.ts-bx > span a::before {
 	content: "";
 	color: #f5e4f7;
 	position: absolute;
