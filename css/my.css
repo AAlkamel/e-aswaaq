@@ -754,7 +754,7 @@ input::placeholder {
 }
 .owl-carousel.owl-loaded {
 	display: flex;
-	padding-left: 20px;
+	padding-left: 55px;
 	padding-top: 130px;
 }
 .login .owl-carousel h3 {
