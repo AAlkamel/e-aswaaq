@@ -770,7 +770,7 @@ input::placeholder {
 	padding-top: 20px; /* height: 500px; */ /* padding: 124px 0 0 81px; */
 }
 .twasol {
-	margin-top: 127px;
+	margin-top: 109px;
 	border-right: solid 1px #bfbfbf;
 	padding: 10px 30px 6px 10px;
 	background-color: #ffffff1a;
@@ -783,7 +783,7 @@ input::placeholder {
 	color: #909090;
 }
 .twasol span {
-	width: 99px; /* background-color: aquamarine; */
+	width: 137px; /* background-color: aquamarine; */
 	display: block;
 	text-align: center;
 }
@@ -846,7 +846,7 @@ input::placeholder {
 .w-line span::after {
 	position: absolute;
 	content: "";
-	width: 27%;
+	width: 15%;
 	height: 1px;
 	background-color: rgb(126 126 126 / 20%);
 	top: 50%;
@@ -856,7 +856,7 @@ input::placeholder {
 .w-line span::before {
 	position: absolute;
 	content: "";
-	width: 27%;
+	width: 15%;
 	height: 1px;
 	background-color: rgb(126 126 126 / 20%);
 	top: 50%;
