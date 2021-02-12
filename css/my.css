@@ -783,7 +783,7 @@ input::placeholder {
 	color: #909090;
 }
 .twasol span {
-	width: 90px; /* background-color: aquamarine; */
+	width: 123px; /* background-color: aquamarine; */
 	display: block;
 	text-align: center;
 }
@@ -992,7 +992,7 @@ label {
 		line-height: 27px;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	s2 h3 {
 		border-radius: 3px 3px 0 0;
 	}
@@ -1130,6 +1130,9 @@ label {
 	}
 	.twasol .row {
 		height: auto;
+	}
+	.twasol span {
+		width: 171px;
 	}
 	.form .row {
 		height: auto;
