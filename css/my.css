@@ -932,7 +932,7 @@ label {
 	margin-bottom: 25px;
 }
 .login.signup .form {
-	margin: 50px 85px;
+	margin: 85px 85px;
 }
 .login.signup .form .row {
 	height: auto;
@@ -965,6 +965,8 @@ label {
 	background-color: #aeaeae1a;
 }
 /* ---------------------login end------------------------ */
+/* ---------------------manage start------------------------ */
+/* ---------------------manage end------------------------ */
 @media only screen and (max-width: 991px) {
 	.twasol {
 		margin-top: 21px;
@@ -1102,7 +1104,7 @@ label {
 		width: 15%;
 	}
 	.login.signup .form {
-		margin: 50px 17px;
+		margin: 33px 17px;
 	}
 	.login.signup .form .row .col-md-6:first-child {
 		padding-left: 15px;
