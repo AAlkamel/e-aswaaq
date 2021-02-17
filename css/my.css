@@ -3,23 +3,93 @@
     
 
  */
+.mac {
+	display: none;
+}
+svg > rect {
+	fill: none !important;
+}
+#curve_chart {
+	margin: 0 auto;
+}
 
+.bg {
+	background: #f4f1f9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f8e6f9, #f4f1f9); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#f8e6f9,
+		#f4f1f9
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: 1px solid rgb(146 74 170 / 20%);
+	border-radius: 5px;
+}
+.bg1 {
+	background: #8e2de2; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4a00e0, #8e2de2); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#4a00e0,
+		#8e2de2
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg2 {
+	background: #fdc830; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f37335, #fdc830);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#f37335,
+		#fdc830
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg3 {
+	background: #dce35b; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #45b649, #dce35b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#45b649,
+		#dce35b
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg4 {
+	background: #ad5389; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #3c1053, #ad5389); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #3c1053, #ad5389);
+}
+.bg5 {
+	background: #add100; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7b920a, #add100);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#7b920a,
+		#add100
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg6 {
+	background: #f46b45;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #eea849, #f46b45); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#eea849,
+		#f46b45
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 * {
 	font-family: 'Almarai', sans-serif, Flaticon, themify, fontawesome;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 .active {
 	display: block !important;
 }
-
 input[type=submit] {
 	cursor: pointer;
 }
-
-/*----------------chick---------------*/
+/* ----------------chick--------------- */
 .contain {
 	display: block;
 	position: relative;
@@ -32,7 +102,6 @@ input[type=submit] {
 	-ms-user-select: none;
 	user-select: none;
 }
-
 /* Hide the browser's default checkbox */
 .contain input {
 	position: absolute;
@@ -41,7 +110,6 @@ input[type=submit] {
 	height: 0;
 	width: 0;
 }
-
 /* Create a custom checkbox */
 .checkmark {
 	position: absolute;
@@ -51,29 +119,24 @@ input[type=submit] {
 	width: 25px;
 	background-color: #eee;
 }
-
 /* On mouse-over, add a grey background color */
 .contain:hover input ~ .checkmark {
 	background-color: #ccc;
 }
-
 /* When the checkbox is checked, add a blue background */
 .contain input:checked ~ .checkmark {
 	background-color: #76037e;
 }
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
-
 /* Show the checkmark when checked */
 .contain input:checked ~ .checkmark:after {
 	display: block;
 }
-
 /* Style the checkmark/indicator */
 .contain .checkmark:after {
 	left: 9px;
@@ -86,8 +149,7 @@ input[type=submit] {
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-/*----------------chick---------------*/
-
+/* ----------------chick--------------- */
 .position-relative i {
 	text-align: center;
 	position: absolute;
@@ -99,7 +161,6 @@ input[type=submit] {
 	border-radius: 3px 0 0 3px;
 	border-right: solid 1px #8b2893;
 }
-
 a {
 	color: #8b2893;
 }
@@ -107,7 +168,6 @@ a:hover {
 	color: #8b2893;
 	text-decoration: none;
 }
-
 *:focus {
 	outline-color: #bfa0c1;
 }
@@ -142,7 +202,6 @@ section {
 	max-width: 300px;
 }
 /* --------------------loder end-------------- */
-
 /* --------------------m-m start-------------- */
 .m-menu {
 	position: fixed;
@@ -155,7 +214,6 @@ section {
 	background-color: #ffffff;
 	box-shadow: 0 0 6px #999;
 }
-
 .img-menu {
 	position: absolute;
 	top: 33px;
@@ -166,16 +224,13 @@ section {
 	margin: 150px 0 0;
 	list-style: none;
 	position: relative;
-	padding: 10px;
-	/* text-align: center; */
+	padding: 10px; /* text-align: center; */
 	direction: rtl;
 }
-
 .m-menu ul li span {
 	position: absolute;
 	right: 20px;
 }
-
 .m-menu span.close {
 	position: absolute;
 	top: 20px;
@@ -184,11 +239,9 @@ section {
 	transition: ease-out .3s;
 	font-size: 16px;
 }
-
 .m-menu span.close:hover {
 	color: #fcb44c;
 }
-
 .m-menu ul li {
 	border-bottom: solid 1px #dfdfdf;
 	text-align: center;
@@ -197,7 +250,6 @@ section {
 .m-menu ul li:hover {
 	background-color: #f3fafa;
 }
-
 ul li a {
 	color: #92229a;
 	transition: ease-out .3s;
@@ -206,12 +258,10 @@ ul li a {
 	height: 100%;
 	display: block;
 }
-
 ul li a:hover {
 	color: #fcb44c;
 	text-decoration: none;
 }
-
 .nav-logo {
 	position: absolute;
 	left: 0;
@@ -221,22 +271,18 @@ ul li a:hover {
 	height: 55px;
 	margin-top: 17px;
 }
-
 /* --------------------m-m end-------------- */
-
 /* --------------------header start-------------- */
 .btn-primary {
 	color: #fff;
 	background-color: #26a3d4;
 	border-color: #249ece;
 }
-
 .btn-primary:hover {
 	color: #fff;
 	background-color: #138ec6;
 	border-color: #249ece;
 }
-
 .gra1 {
 	background: #f0f6f7; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to bottom, #ffffff, #fafeff); /* Chrome 10-25, Safari 5.1-6 */
@@ -257,8 +303,7 @@ ul li a:hover {
 }
 .gra3 {
 	background: #fdc830; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #f37335, #fdc830);
-	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to bottom, #f37335, #fdc830); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(
 		to bottom,
 		#f37335,
@@ -390,8 +435,7 @@ input[type="checkbox" i] {
 	width: 100%;
 }
 section:nth-of-type(2) {
-	padding-top: 60px;
-	/* border-top: solid 1px #8902922e; */
+	padding-top: 60px; /* border-top: solid 1px #8902922e; */
 	background-color: #f4f2f5; /* background-image: url(../images/bg-02.jpg);
 	background-size: cover; */
 }
@@ -636,7 +680,8 @@ input::placeholder {
 	border-right: solid 6px transparent;
 }
 .ts-bx .op span {
-	display: block; /* margin-bottom: 8px; */
+	display: block;
+	/* margin-bottom: 8px; */
 	background-color: #fff;
 }
 .ts-bx .op span:hover {
@@ -754,7 +799,7 @@ input::placeholder {
 }
 .owl-carousel.owl-loaded {
 	display: flex;
-	padding-left: 55px;
+	padding-left: 75px;
 	padding-top: 130px;
 }
 .login .owl-carousel h3 {
@@ -898,7 +943,8 @@ label {
 	cursor: pointer;
 }
 .f-logo img {
-	width: 93px; /* position: absolute;
+	width: 93px;
+	/* position: absolute;
 	top: 50px;
 	right: 0; */
 }
@@ -966,6 +1012,263 @@ label {
 }
 /* ---------------------login end------------------------ */
 /* ---------------------manage start------------------------ */
+.manage {
+	background-image: url(../images/login/bg.png);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.manage .tm-bx > span a::before {
+	color: #f5e4f7;
+}
+.tm-bx {
+	padding: 0 10px;
+	position: relative;
+}
+.tm-bx > span a::before {
+	color: #f5e4f7;
+}
+.tm-bx .m-op span:not(:last-child) {
+	border-bottom: dashed 1px #eee;
+}
+.tm-bx .m-op {
+	border-radius: 4px;
+	padding: 4px;
+	text-align: center;
+	position: absolute;
+	background-color: #fff;
+	min-width: 175px;
+	right: 0px;
+	top: 43px;
+	z-index: 11; /* padding-top: 8px; */
+	box-shadow: 0 0 8px #1e03212b;
+	display: none;
+}
+.tm-bx .m-op::before {
+	content: '';
+	position: absolute;
+	top: -6px;
+	right: 10%;
+	width: 0;
+	height: 0;
+	border-bottom: solid 6px #fff;
+	border-left: solid 6px transparent;
+	border-right: solid 6px transparent;
+}
+.tm-bx .m-op span {
+	display: block; /* margin-bottom: 8px; */
+	background-color: #fff;
+	position: relative;
+}
+.tm-bx .m-op span i {
+	font-size: 16px;
+	padding-left: 10px;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+.tm-bx .m-op span:hover {
+	background-color: #f9f6f8;
+}
+.tm-bx .m-op span a {
+	color: #610568 !important;
+	padding: 5px 5px;
+	font-size: 14px;
+	text-align: left;
+}
+.tm-bx > small {
+	color: #ffffff;
+	position: absolute;
+	top: -5px;
+	right: 0;
+	font-size: 12px;
+}
+.avatar {
+	width: 30px;
+	height: 30px;
+	object-fit: cover; /* margin-left: 25px; */
+	/* margin-top: 8px; */
+	border-radius: 50%;
+	border: solid 1px #efddf1;
+	box-shadow: 0 0 3px;
+}
+.time {
+	display: block;
+	padding-top: 2px;
+}
+.shop {
+	padding-right: 0;
+	padding-top: 7px;
+}
+.shop img {
+	height: 25px;
+}
+.sec1 {
+	padding-top: 50px;
+	direction: rtl;
+}
+.sec1 h5 {
+	text-align: right;
+	padding-right: 30px;
+	margin-top: 9px;
+	padding-bottom: 12px;
+	margin-bottom: 11px;
+	font-size: 25px;
+	font-weight: 600;
+	color: #924a90;
+	border-bottom: solid 1px #e0cfe9;
+}
+.sta {
+	padding: 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.sta span {
+	color: #8b2893;
+	font-size: 30px;
+	padding-top: 10px;
+}
+.sta strong {
+	color: #8b2893;
+	font-size: 40px;
+}
+.view {
+	text-align: left;
+	padding: 10px 30px 21px;
+}
+.view a {
+	border-radius: 30px;
+	padding: 5px 13px;
+}
+.manage .card {
+	background: #f4f1f9;
+	background: -webkit-linear-gradient(to left, #ffffff85, #f1e1f359);
+	background: linear-gradient(to left, #ffffff85, #f1e1f359);
+	border: 1px solid rgb(146 74 170 / 20%);
+	border-radius: 5px;
+	box-shadow: 0 0 3px #3b06403b;
+	backdrop-filter: blur(2px);
+	transition: ease-out .3s;
+	margin-bottom: 30px;
+}
+.manage .card:hover {
+	margin-top: -10px;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 15px #433b4425;
+}
+.sta .shop img {
+	height: 37px;
+}
+.steps {
+	padding: 10px 0px;
+	margin-bottom: 15px;
+}
+.top {
+	margin-bottom: 55px;
+}
+.top h6 {
+	color: #610568;
+	font-size: 18px;
+	text-align: right;
+}
+.set {
+	padding: 20px 0;
+}
+.set span {
+	margin-right: 30px;
+	padding: 7px 9px;
+	padding-right: 15px;
+	border-radius: 17px;
+	font-size: 13px;
+}
+.set span i {
+	padding: 0 5px;
+}
+.steps ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	counter-reset: steps;
+}
+.steps ul li {
+	position: relative;
+	color: #5a1d5f;
+	width: 33.333%;
+	text-align: center;
+}
+.steps ul li::before {
+	position: absolute;
+	top: -40px;
+	right: 50%;
+	transform: translateX(50%);
+	content: counter(steps);
+	counter-increment: steps;
+	background-color: #cacaca;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 15px;
+	color: #5a1d5f;
+	border: solid 2px #b1b1b1;
+}
+.steps ul li:not(:last-child)::after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	background-color: #cacaca;
+	position: absolute;
+	top: -27px;
+	right: 50%;
+	z-index: -1;
+}
+.steps ul li.don::before {
+	content: "\e64c";
+	background-color: #8b2893;
+	color: #f6f3f7;
+	border: solid 2px #9f72a2;
+}
+.steps ul li.don:not(:last-child)::after {
+	background-color: #8b2893;
+}
+.sta1-con {
+	display: flex;
+	direction: rtl;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	padding: 30px 2%;
+	border-top: solid 1px #8b289340;
+	background-color: #faf3fba6;
+}
+.s-con {
+	width: 24%;
+	padding: 0 7px;
+}
+.sta1 {
+	padding: 8px;
+	padding-bottom: 12px;
+	text-align: center;
+	background: #603565;
+	background: -webkit-linear-gradient(to left, #603565, #562c58);
+	background: linear-gradient(to left, #603565, #562c58); /* border: 1px solid rgb(146 74 170 / 20%); */
+	border-radius: 5px;
+	box-shadow: 0 0 5px #0f0010;
+	backdrop-filter: blur(2px);
+	transition: ease-out .3s;
+	/* margin-bottom: 30px; */
+	color: #f4eef5;
+}
+.sta1:hover {
+	margin-top: -10px;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 15px #0f0010b4;
+}
+.sta1 strong {
+	font-size: 30px;
+	position: relative;
+	letter-spacing: 2px;
+}
 /* ---------------------manage end------------------------ */
 @media only screen and (max-width: 991px) {
 	.twasol {
@@ -1138,5 +1441,25 @@ label {
 	}
 	.form .row {
 		height: auto;
+	}
+	/* ------------------------------------------------ */
+	.manage .nav-logo .l-logo {
+		height: 35px;
+		margin-top: 22px;
+	}
+	.tm-bx {
+		padding: 0px;
+	}
+	.tm-bx .m-op::before {
+		right: 5%;
+	}
+	.tm-bx small {
+		right: -4px;
+	}
+	.manage .nav-menu ul {
+		margin-left: 40px;
+	}
+	.avatar {
+		margin-top: -6px;
 	}
 }

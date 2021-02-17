@@ -1,3 +1,7 @@
+// var platform=document.getElementById('platform');
+//     console.log(navigator.userAgent);
+
+
 $( document ).ready(function() {
 
     $(".owl-carousel").owlCarousel({
@@ -9,6 +13,10 @@ $( document ).ready(function() {
     autoplayHoverPause:true
     });
 
+    // ----------------------------------
+    if(navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/Mac OS X/i)){
+        $(".mac").show();
+    }
     // ----------------------------------
 
     $(".m-menu span.close").on("click",function(){
@@ -56,6 +64,23 @@ $( document ).ready(function() {
         
     });
     //---------------------------------------------
+    $(".tm-bx > span a").on("click",function(e){
+        //e.preventDefault();
+        if( $(this).parent().next().hasClass('active')){
+            $(".m-op").removeClass('active');
+        }else{
+            $(".m-op").removeClass('active');
+            $(this).parent().next().addClass('active');
+        }
+        
+    });
+    $(document).on("click",function(){
+        $(".m-op").removeClass('active');
+    });
+    $('.tm-bx').on("click",function(e){
+        e.stopPropagation();
+        
+    });
     //-------------------------------------------------------
     $(".ts-bx-m > a").on("click",function(e){
         e.preventDefault();
@@ -161,6 +186,22 @@ let t10 = gsap.timeline({
     }
 });
 t10.from('.signup-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
+let t11 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.sec1',
+        start: 'center bottom'
+    }
+});
+t11.from('.sec1-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
+t11.from('.card strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=2')
+let t12 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.sec2',
+        start: 'center bottom'
+    }
+});
+t12.from('.sec2-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
+t12.from('.sta1 strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=1.5')
 
 });
 // gsap.from(".box", {

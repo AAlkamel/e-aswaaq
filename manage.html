@@ -23,7 +23,39 @@
         
         <!-- PAGE TITLE HERE ============================================= -->
         <title>e-aswaaq </title>
-        
+        <!-- --------------------------------------------------------------- -->
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['Year', 'Sales'],
+				['2004',  5],
+				['2005',  50],
+				['2006',  20],
+				['2007',  90]
+			]);
+			var data1 = google.visualization.arrayToDataTable([
+				['Year', 'Sales'],
+				['2004',  5],
+				['2005',  50],
+				['2006',  20],
+				['2007',  90]
+			]);
+			var options = {
+				title: 'Company Performance',
+				curveType: 'function',
+				legend: { position: 'bottom' },
+				
+			};
+
+			var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+			chart.draw(data, options);
+		}
+    </script>
         <!-- MOBILE SPECIFIC ============================================= -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -41,16 +73,112 @@
 			<img class="loader" src="./images/logo.gif" alt="">
 			<span class="loader"><span class="loader-inner"></span></span>
 		</div>
+		<div class="manage-menu">
+			<ul>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
 		<header>
 			<div class="">
 				<div class="t-nav"> 
 					<div class="container">
 						<div class="nav-menu">
 							<ul>
-								
+								<li class="">
+									<div class="tm-bx">
+										<span > <a class="p-0" href="#"><img class="avatar" src="./images/pic2.jpg" alt=""> </a></span>
+										<div class="m-op">
+											<span><a class="text-center" href=""><strong>مرحباٌ بك</strong> </a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-user"></i> تعديل الملف الشخصي</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-key"></i>تغيير كلمة المرور</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-world"></i>موقعي</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-power-off"></i>تسجيل الخروج</a></span>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="tm-bx">
+										<span > <a class="ti-menu" href="#"> </a></span>
+									</div>
+								</li>
+								<li class="">
+									<div class="tm-bx">
+										<span > <a class="ti-world" href="#"> </a></span>
+									</div>
+								</li>
+								<li class="">
+									<div class="tm-bx">
+										<small>3</small>
+										<span > <a class="ti-email" href="#"> </a></span>
+										<div class="m-op">
+											<span><a class="text-center" href="#">
+												<strong>التنبيهات والمحادثات</strong>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-comment-alt"></i>
+												رسالة من أحمد
+												<small class="time">منذ دقيقة</small>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-microphone-alt"></i>
+												تم تعديل سياسة الخصوصية
+												<small class="time">منذ 2 شهر</small>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-microphone-alt"></i>
+												تم ارسال أرباحك 
+												<small class="time">منذ 3 ساعات </small>
+											</a></span>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="tm-bx">
+										<small>3</small>
+										<!-- <span > <a class="ti-shopping-cart" href="#"> </a></span> -->
+										<span > <a class="shop" href="#"> <img src="./images/shop.png" alt=""> </a></span>
+										<div class="m-op">
+											<span><a class="text-center" href="#">
+												<strong>المنتجات</strong>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-shopping-cart"></i>
+												المنتج الإلكتروني الأول 
+												
+												<small class="time">المخزون : 100</small>
+												<small class="time">منذ دقيقة</small>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-shopping-cart"></i>
+												المنتج الإلكتروني الثاني 
+												
+												<small class="time">المخزون : 100</small>
+												<small class="time">منذ 2 شهر</small>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-shopping-cart"></i>
+												المنتج الإلكتروني الثالث 
+												
+												<small class="time">المخزون : 100</small>
+												<small class="time">منذ 20 يوم</small>
+											</a></span>
+										</div>
+									</div>
+								</li>
+								<li class="">
+									<div class="tm-bx">
+										<small>1</small>
+										<span > <a class="ti-truck" href="#"> </a></span>
+										<div class="m-op">
+											<span><a class="text-center" href="#">
+												<strong>الطلبات</strong>
+											</a></span>
+											<span class="pr-4"><a href="#"> <i class="ti-receipt"></i>
+												لديك طلب جديد
+												
+												<small class="time">منذ دقيقة</small>
+											</a></span>
+										</div>
+									</div>
+								</li>
 							</ul>
 						</div>
 						<div class="nav-logo">
+							
 							<img class="l-logo" src="./images/logo-w-t.png" alt="">
 						</div>
 					</div>
@@ -58,8 +186,147 @@
 			</div>
 			
 		</header>
+
 		<main>
-			
+			<div class="sec1">
+				<div class="container">
+					<div class="top">
+						<div class="set sec1-move">
+							<a  href="#"><span class="btn2" >إعدادات السوق <i class="ti-settings"></i> </span></a>
+							<a  href="#"><span class="btn2" >إدارة اللإشتراك <i class="ti-medall"></i> </span></a>
+							<a  href="#"><span class="btn2" >مركز المساعدة <i class="ti-heart"></i> </span></a>
+							
+							
+							
+						</div>
+						<h6 class="sec1-move">أكمل اعدادات حسابك</h6>
+						
+					</div>
+					<div class="steps sec1-move">
+						<ul >
+							<li class="don">الخطوة الأولى</li>
+							<li ">الخطوة الثانية</li>
+							<li >الخطوة الثالثة</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>الطلبات</h5>
+								<div class="sta">
+									<span class="ti-truck"></span>
+									<strong>10</strong>
+									
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>المبيعات</h5>
+								<div class="sta">
+									<span class="ti-tag"></span>
+									<strong>500</strong>
+									
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>المنتجات</h5>
+								<div class="sta">
+									<span class="shop"> <img src="./images/shop2.png" alt=""></span>
+									<strong>30</strong>
+									
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>العملاء</h5>
+								<div class="sta">
+									<span class="ti-crown"></span>
+									<strong>305</strong>
+									
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>الزيارات</h5>
+								<div class="sta">
+									<span class="ti-stats-up"></span>
+									<strong>2000</strong>
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-4 sec1-move">
+							<div class="card ">
+								<h5>الآراء والتقييمات </h5>
+								<div class="sta">
+									<span class="ti-thumb-up"></span>
+									<strong>200</strong>
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec2">
+				<div class="container">
+					<div class="sta1-con">
+						<div class="sec2-move s-con">
+							<div class="sta1">
+								<strong>15</strong>
+								<h4>المبيعات</h4>
+								<span>أخر 30 يوم</span>
+							</div>
+						</div>
+						<div class="sec2-move s-con">
+							<div class="sta1">
+								<strong>20</strong>
+								<h4>الطلبات</h4>
+								<span>أخر 30 يوم</span>
+							</div>
+						</div>
+						<div class="sec2-move s-con">
+							<div class="sta1">
+								<strong>250</strong>
+								<h4>الزيارات</h4>
+								<span>أخر 30 يوم</span>
+							</div>
+						</div>
+						<div class="sec2-move s-con">
+							<div class="sta1">
+								<strong>12</strong>
+								<h4>العملاء</h4>
+								<span>أخر 30 يوم</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec3"></div>
+			<div class="sec4">
+				<div id="curve_chart" style="width: 100%; height: 500px"></div>
+			</div>
 		</main>
 		<footer>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
