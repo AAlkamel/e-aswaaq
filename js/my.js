@@ -14,6 +14,7 @@ $( document ).ready(function() {
     });
 
     // ----------------------------------
+
     if(navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)||navigator.userAgent.match(/Mac OS X/i)){
         $(".mac").show();
     }
@@ -32,6 +33,21 @@ $( document ).ready(function() {
         },400);
     });
     //-------------------------------------------------------
+    $(".x-manage-menu").on("click",function(){
+        if($(".manage-menu").hasClass('show')){
+            $(".manage-menu").animate({
+                "right":"-256px"
+            },400);
+            $(".manage-menu").removeClass('show');
+        }else{
+            $(".manage-menu").animate({
+                "right":"0px"
+            },400);
+            $(".manage-menu").addClass('show');
+        }
+    });
+
+        //-------------------------------------------------------
     // $(".ts-bx > span a").on("click",function(e){
     //     e.preventDefault();
     //    // $(".op").hide();
@@ -189,7 +205,7 @@ t10.from('.signup-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
 let t11 = gsap.timeline({
     scrollTrigger:{
         trigger:'.sec1',
-        start: 'center bottom'
+        start: 'top bottom'
     }
 });
 t11.from('.sec1-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')

@@ -7,8 +7,17 @@
 	display: none;
 }
 svg > rect {
-	fill: none !important;
+	fill: #ddd2dfb9 !important;
 }
+svg text {
+	fill: #4d0653 !important;
+}
+svg g:nth-child(5) > g rect {
+	fill: #6a436d56 !important;
+}
+/* svg g:nth-child(5) > g path {
+	stroke: #610568 !important;
+} */
 #curve_chart {
 	margin: 0 auto;
 }
@@ -1104,7 +1113,7 @@ label {
 	height: 25px;
 }
 .sec1 {
-	padding-top: 50px;
+	padding-top: 95px;
 	direction: rtl;
 }
 .sec1 h5 {
@@ -1164,22 +1173,46 @@ label {
 	margin-bottom: 15px;
 }
 .top {
-	margin-bottom: 55px;
+	margin-bottom: 10px;
 }
-.top h6 {
+.manage .row h6 {
 	color: #610568;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: right;
+	margin-top: -3px;
+	margin-bottom: 0;
+	padding-right: 10px;
+	padding-bottom: 0px;
+}
+.manage .row.setting {
+	padding: 15px 0 15px;
+	background-color: #ffffff45;
+	border-radius: 23px;
+	margin-bottom: 15px;
+	border: solid 1px #d6c2dc;
+}
+.manage .progress {
+	background-color: #b9b8b975;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.progress-bar {
+	background-color: #76037e;
 }
 .set {
 	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 .set span {
-	margin-right: 30px;
+	margin-left: 30px;
 	padding: 7px 9px;
-	padding-right: 15px;
+	padding-right: 16px;
 	border-radius: 17px;
-	font-size: 13px;
+	font-size: 16px;
+}
+.set a {
+	margin-bottom: 20px;
 }
 .set span i {
 	padding: 0 5px;
@@ -1244,6 +1277,8 @@ label {
 .s-con {
 	width: 24%;
 	padding: 0 7px;
+	min-width: 230px;
+	padding-bottom: 15px;
 }
 .sta1 {
 	padding: 8px;
@@ -1255,8 +1290,7 @@ label {
 	border-radius: 5px;
 	box-shadow: 0 0 5px #0f0010;
 	backdrop-filter: blur(2px);
-	transition: ease-out .3s;
-	/* margin-bottom: 30px; */
+	transition: ease-out .3s; /* margin-bottom: 30px; */
 	color: #f4eef5;
 }
 .sta1:hover {
@@ -1269,7 +1303,53 @@ label {
 	position: relative;
 	letter-spacing: 2px;
 }
+.manage-menu {
+	box-shadow: 0 0 6px #6c257399;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	right: -256px;
+	width: 250px;
+	height: 100vh;
+	overflow: auto;
+	background-color: #fefaff;
+	padding-top: 95px;
+}
+.manage-menu ul {
+	list-style: none;
+}
+.manage-menu ul li {
+}
+.manage-menu ul li a {
+	text-align: left;
+	color: #76037e;
+	position: relative;
+	padding-right: 45px;
+	padding-left: 15px;
+	border-bottom: dashed 1px #eee;
+	transition: ease-out .5s;
+}
+.manage-menu ul li a:hover {
+	/* text-align: center; */
+	color: #76037e;
+	background-color: #f2eef3;
+	border-right: solid 5px #924a90;
+	padding-left: 17px;
+}
+.manage-menu ul li a i {
+	position: absolute;
+	right: 15px;
+}
 /* ---------------------manage end------------------------ */
+@media only screen and (max-width: 575px) {
+	.manage .row h6 {
+		padding-bottom: 10px;
+	}
+	.manage .row.setting {
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+}
 @media only screen and (max-width: 991px) {
 	.twasol {
 		margin-top: 21px;
