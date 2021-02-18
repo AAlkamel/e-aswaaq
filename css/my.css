@@ -1029,6 +1029,9 @@ label {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.manage .t-nav {
+	background: linear-gradient(225deg, #8d0296 0%, #8d0296 100%);
+}
 .manage .tm-bx > span a::before {
 	color: #f5e4f7;
 }
@@ -1112,7 +1115,15 @@ label {
 	padding-top: 7px;
 }
 .shop img {
-	height: 25px;
+	height: 20px;
+	margin-top: -3px;
+}
+.up-d a {
+	color: #f5e4f7 !important;
+	border: solid 1px #f5e4f7;
+	padding: 3px 8px;
+	border-radius: 19px;
+	font-size: 16px !important;
 }
 .sec1 {
 	padding-top: 95px;
@@ -1124,10 +1135,23 @@ label {
 	margin-top: 9px;
 	padding-bottom: 12px;
 	margin-bottom: 11px;
-	font-size: 25px;
+	font-size: 18px;
 	font-weight: 600;
-	color: #924a90;
-	border-bottom: solid 1px #e0cfe9;
+	color: #ffffff;
+	border-bottom: solid 1px #7b1d86;
+}
+.select {
+	text-align: right;
+}
+.select select {
+	color: #8f3097;
+	padding: 7px 5px 9px 0px;
+	border-radius: 5px;
+	border: solid 1px #8f30974a;
+	background-color: #fffaff61;
+	font-size: 15px;
+}
+.select option {
 }
 .sta {
 	padding: 0 30px;
@@ -1135,17 +1159,28 @@ label {
 	justify-content: space-between;
 }
 .sta span {
-	color: #8b2893;
+	color: #eee5ef;
 	font-size: 30px;
-	padding-top: 10px;
+	padding-top: 0px;
 }
 .sta strong {
-	color: #8b2893;
-	font-size: 40px;
+	color: #eee5ef;
+	font-size: 30px;
 }
 .view {
 	text-align: left;
 	padding: 10px 30px 21px;
+}
+.view .btn2 {
+	background-color: transparent;
+	color: #d3a9d7;
+	border: solid 1px #d3aad7;
+	transition: ease-out .3s;
+}
+.view .btn2:hover {
+	background-color: transparent;
+	color: #ede8ee;
+	border: solid 1px #fdfdfd;
 }
 .view a {
 	border-radius: 30px;
@@ -1153,11 +1188,11 @@ label {
 }
 .manage .card {
 	background: #f4f1f9;
-	background: -webkit-linear-gradient(to left, #ffffff85, #f1e1f359);
-	background: linear-gradient(to left, #ffffff85, #f1e1f359);
+	background: -webkit-linear-gradient(to left, #8d0296, #821d8e);
+	background: linear-gradient(to left, #8d0296, #821d8e);
 	border: 1px solid rgb(146 74 170 / 20%);
 	border-radius: 5px;
-	box-shadow: 0 0 3px #3b06403b;
+	box-shadow: 0 0 5px #260929d1;
 	backdrop-filter: blur(2px);
 	transition: ease-out .3s;
 	margin-bottom: 30px;
@@ -1183,20 +1218,23 @@ label {
 	text-align: right;
 	margin-top: -3px;
 	margin-bottom: 0;
-	padding-right: 10px;
+	padding-right: 15px;
 	padding-bottom: 0px;
 }
-.manage .row.setting {
+.manage .setting {
 	padding: 15px 0 15px;
 	background-color: #ffffff45;
-	border-radius: 23px;
-	margin-bottom: 15px;
+	border-radius: 5px;
+	margin: 15px 0;
 	border: solid 1px #d6c2dc;
+	display: grid;
+	grid-template-columns: 30% 70%;
 }
 .manage .progress {
 	background-color: #b9b8b975;
 	overflow: hidden;
 	border-radius: 10px;
+	margin: 0 15px;
 }
 .progress-bar {
 	background-color: #76037e;
@@ -1209,7 +1247,7 @@ label {
 	z-index: 2;
 }
 .set.set1 {
-	padding: 10px 0 3px;
+	padding: 30px 0 3px;
 	flex-direction: row-reverse;
 	z-index: 1;
 }
@@ -1222,7 +1260,7 @@ label {
 	margin-left: 30px;
 	padding: 8px 9px;
 	padding-right: 16px;
-	border-radius: 17px;
+	border-radius: 5px;
 	font-size: 20px;
 }
 .set a {
@@ -1234,17 +1272,25 @@ label {
 .set .sub-m {
 	position: absolute;
 	top: 47px;
-	right: 7px;
+	right: 50%;
+	transform: translateX(50%);
+	padding-top: 5px;
+	margin-top: -6px;
 	display: none;
 }
 .b-d {
-	padding: 5px 0 17px;
+	padding: 5px 0;
 	position: relative;
+	min-width: 59%;
+	text-align: center;
+}
+.b-d > span {
+	color: white;
 }
 .b-d::after {
 	position: absolute;
-	bottom: 9px;
-	right: 73px;
+	bottom: -4px;
+	right: 50%;
 	content: "";
 	border-width: 5px;
 	border-top: dashed #76037e;
@@ -1276,7 +1322,7 @@ label {
 .set .sub-m ul li a {
 	color: #8b2893;
 	margin: 0;
-	background-color: #fafafab0;
+	background-color: #fafafae6;
 	backdrop-filter: blur(4px);
 	padding: 5px 12px;
 	font-size: 14px;
@@ -1379,7 +1425,7 @@ label {
 	width: 250px;
 	height: 100vh;
 	overflow: auto;
-	background-color: #8b2893;
+	background-color: #8d0296;
 	padding-top: 95px;
 }
 .manage-menu ul {
@@ -1388,13 +1434,14 @@ label {
 .manage-menu ul li {
 }
 .manage-menu ul li a {
-	text-align: left;
+	text-align: right;
 	color: #f5e4f7;
 	position: relative;
 	padding-right: 45px;
 	padding-left: 15px;
 	border-bottom: dashed 1px #eeeeee1f;
 	transition: ease-out .5s;
+	font-size: 14px;
 }
 .manage-menu ul li a:hover {
 	/* text-align: center; */
@@ -1418,6 +1465,18 @@ label {
 	.manage .row.setting {
 		margin-left: 1px;
 		margin-right: 1px;
+	}
+	.manage .setting {
+		grid-template-columns: 1fr;
+	}
+	.set.set1 {
+		display: none;
+	}
+	.sec1 {
+		padding-top: 106px;
+	}
+	.manage-menu {
+		padding-top: 124px;
 	}
 }
 @media only screen and (max-width: 991px) {
