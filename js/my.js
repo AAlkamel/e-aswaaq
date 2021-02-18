@@ -39,11 +39,19 @@ $( document ).ready(function() {
                 "right":"-256px"
             },400);
             $(".manage-menu").removeClass('show');
+            $("main").animate({
+                'padding-right': '0px',
+                ' padding-left': '0px',
+            },400);
         }else{
             $(".manage-menu").animate({
                 "right":"0px"
             },400);
             $(".manage-menu").addClass('show');
+            $("main").animate({
+                'padding-right': '265px',
+                ' padding-left': '15px',
+            },400);
         }
     });
 
