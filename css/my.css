@@ -21,6 +21,9 @@ svg g:nth-child(5) > g rect {
 #curve_chart {
 	margin: 0 auto;
 }
+canvas {
+	height: 470px !important;
+}
 
 .bg {
 	background: #f4f1f9; /* fallback for old browsers */
@@ -1497,6 +1500,11 @@ label {
 	color: #8f3097;
 	font-size: 18px;
 }
+.sec4 .cont {
+	direction: rtl;
+	padding: 22px 15px;
+	background-color: #fbfbfbb8;
+}
 /* ---------------------manage end------------------------ */
 @media only screen and (max-width: 575px) {
 	main {
@@ -1532,6 +1540,7 @@ label {
 	.login.signup .form {
 		margin: 81px 30px;
 	}
+
 	.login h2 {
 		font-size: 18px;
 		line-height: 30px;
@@ -1590,7 +1599,6 @@ label {
 	.nav-logo {
 		position: absolute;
 		left: 15px;
-
 		top: -15px;
 	}
 	.frist-row {

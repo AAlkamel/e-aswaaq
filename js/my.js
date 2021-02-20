@@ -115,7 +115,7 @@ $( document ).ready(function() {
 });
 
 $(window).on("load",function(){
-    $(".loader-wrapper").delay(500).fadeOut();
+    $(".loader-wrapper").fadeOut();
 
 
 
@@ -226,6 +226,44 @@ let t12 = gsap.timeline({
 });
 t12.from('.sec2-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
 //t12.from('.talab strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=1')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var dWeek =[0, 10, 5, 2, 20, 30, 45],
+    
+    d=dWeek;
+
+//-----------------------------chart js
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: '#8d029657',
+            borderColor: '#8d0299',
+            data: d
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
 
 });
 // gsap.from(".box", {
