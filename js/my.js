@@ -225,7 +225,7 @@ let t12 = gsap.timeline({
     }
 });
 t12.from('.sec2-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
-t12.from('.sta1 strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=1.5')
+//t12.from('.talab strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=1')
 
 });
 // gsap.from(".box", {

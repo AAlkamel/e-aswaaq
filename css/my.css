@@ -1454,6 +1454,49 @@ label {
 	position: absolute;
 	right: 15px;
 }
+/* ------------------------------------------ */
+.manage .sec2 {
+	margin: 30px 0 60px;
+}
+.sec2 h5 {
+	text-align: right;
+	color: #5a1d5f;
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+.sec2 .talab {
+	background-color: #fbfbfbb8;
+	display: flex;
+	flex-wrap: wrap;
+	direction: rtl;
+	padding: 5px;
+	align-items: center;
+	margin-bottom: 5px;
+	border-bottom: solid 1px #8d029657;
+}
+.sec2 .img {
+	width: 60px;
+	height: 60px;
+	margin-left: 30px;
+	border-radius: 4px;
+	overflow: hidden;
+	filter: grayscale(.5);
+}
+.sec2 .img img {
+	object-fit: cover;
+	width: 100%;
+}
+.sec2 .infor {
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+}
+.infor span {
+	display: inline-block; /* margin-top: 17px; */
+	margin-left: 30px;
+	color: #8f3097;
+	font-size: 18px;
+}
 /* ---------------------manage end------------------------ */
 @media only screen and (max-width: 575px) {
 	main {
@@ -1507,6 +1550,13 @@ label {
 	}
 }
 @media only screen and (max-width: 767px) {
+	.sec2 .infor {
+		display: block;
+		text-align: center;
+	}
+	.sec2 .img {
+		margin: 5px auto;
+	}
 	s2 h3 {
 		border-radius: 3px 3px 0 0;
 	}
@@ -1540,6 +1590,7 @@ label {
 	.nav-logo {
 		position: absolute;
 		left: 15px;
+
 		top: -15px;
 	}
 	.frist-row {
