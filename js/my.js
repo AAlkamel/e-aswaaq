@@ -229,11 +229,19 @@ t12.from('.sec2-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
 
 let t13 = gsap.timeline({
     scrollTrigger:{
+        trigger:'.sec3',
+        start: 'center bottom'
+    }
+});
+t13.from('.sec3-move',{y:20, opacity:0, stagger:0.1, duration:0.5},'+=.5')
+
+let t14 = gsap.timeline({
+    scrollTrigger:{
         trigger:'.sec4',
         start: 'center bottom'
     }
 });
-t13.from('.sec4-move',{y:20, opacity:0, stagger:0.1, duration:0.8},'+=.5')
+t14.from('.sec4-move',{y:20, opacity:0, stagger:0.1, duration:0.8},'+=.5')
 
 
 

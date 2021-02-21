@@ -1595,6 +1595,9 @@ label {
 	overflow: hidden;
 	filter: grayscale(.5);
 }
+.sec3 .col-xl-4 {
+	margin-bottom: 30px;
+}
 .sec3 .img img {
 	object-fit: cover;
 	width: 100%;
