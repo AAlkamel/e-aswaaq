@@ -24,56 +24,7 @@
         <!-- PAGE TITLE HERE ============================================= -->
         <title>e-aswaaq </title>
         <!-- --------------------------------------------------------------- -->
-		<!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
 
-        function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Year', 'Sales'],
-				['1 feb',  5],
-				['2 feb',  50],
-				['3 feb',  20],
-				['4 feb',  90],
-				['5 feb',  5],
-				['6 feb',  50],
-				['7 feb',  20],
-				['8 feb',  90],
-				['9 feb',  5],
-				['10 feb',  50],
-				['11 feb',  20],
-				['12 feb',  90],
-				['13 feb',  5],
-				['14 feb',  50],
-				['15 feb',  20],
-				['16 feb',  90],
-				['17 feb',  5],
-				['18 feb',  50],
-				['19 feb',  20],
-				['20 feb',  90],
-				['21 feb',  5],
-				['22 feb',  50],
-				['23 feb',  20],
-				['24 feb',  90],
-				['25 feb',  5],
-				['26 feb',  50],
-				['27 feb',  20],
-				['28 feb',  90],
-				['29 feb',  5]
-			]);
-			var options = {
-				title: ' مخطط المبيعات خلال شهر',
-				curveType: 'function',
-				legend: { position: 'bottom' },
-				
-			};
-
-			var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-			chart.draw(data, options);
-		}
-    </script> -->
         <!-- MOBILE SPECIFIC ============================================= -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -95,12 +46,12 @@
 			<ul>
 				<li><a href="#">الرئيسية <i class="ti-home"></i></a></li>
 				<li><a href="#">التسويق<i class="ti-announcement"></i></a></li>
-				<li><a href="#">إعدادات الرسائل<i class="ti-email"></i></a></li>
-				<li><a href="#">إعدادات الربط التقني<i class="ti-link"></i></a></li>
-				<li><a href="#">صفحة السوق <i class="ti-world"></i></a></li>
 				<li><a href="#">اللإعدادات العامة <i class="ti-settings"></i></a></li>
-				<li><a href="#">التقارير <i class="ti-receipt"></i></a></li>
+				<li><a href="#">إعدادات الرسائل<i class="ti-email"></i></a></li>
+				<li><a href="#"> API إعدادات الربط التقني<i class="ti-link"></i></a></li>
+				<li><a href="#">مشتريات سوقك الالكتروني<i class="fas fa-shopping-basket"></i></a></li>
 				<li><a href="#">إدارة الموظفين<i class="ti-user"></i></a></li>
+				<li><a href="#">صفحة السوق <i class="ti-world"></i></a></li>
 				<!-- <li><a href="#">إعدادات السوق<i class="ti-world"></i></a></li>
 				<li><a href="#">إعدادات أساسية<i class="ti-settings"></i></a></li>
 				<li><a href="#">إعدادات المنتجات<i class="ti-gift"></i></a></li>
@@ -228,16 +179,20 @@
 				<div class="container">
 					<div class="top">
 						<div class="row">
-							<div class="col-sm-7">
+							<div class="col-sm-6">
 								<div class="set sec1-move">
 									<div class="b-d btn1">
-										<span class=" m-0" >إعدادات السوق <i class="ti-settings"></i> </span>
+										<span class=" m-0" > <i class="ti-settings"></i> إعدادات السوق  </span>
 										<div class="sub-m">
 											<ul>
+												<li><a href="#">
+													الإعدادات الأساسية
+													<span>الرابط , الشعار , معلومات السوق , تفاصيل النشاط</span>
+												</a></li>
 												<li><a href="#">إعدادات المنتجات</a></li>
 												<li><a href="#">إعدادات الشحن والتوصيل</a></li>
-												<li><a href="#">إعدادات بوابات الدفع</a></li>
-												<li><a href="#">إعدادات الموقع والمخزون</a></li>
+												<li><a href="#"> إعدادات بوابات الدفع الإلكتروني</a></li>
+												<li><a href="#">إعدادات الموقع والفروع والمخزون</a></li>
 											</ul>
 										</div>
 									</div>
@@ -245,14 +200,14 @@
 								</div>
 								<div class=" setting sec1-move">
 									<div class="">
-										<h6 class="">أكمل اعدادات حسابك</h6>
+										<h6 class="">أكمل اعدادات سوقك الإلكتروني</h6>
 									</div>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">25%</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-5">
+							<div class="col-sm-6">
 								<div class="set set1 sec1-move">
 									<a  href="#"><span class="btn2" >إدارة اللإشتراك <i class="ti-medall"></i> </span></a>
 									<a  href="#"><span class="btn2" >مركز المساعدة <i class="ti-heart"></i> </span></a>
@@ -273,18 +228,20 @@
 						</ul>
 					</div> -->
 					<div class="select sec1-move">
-						<select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-							<option selected value="0">إحصائيات الشهر الحالي</option>
-							<option value="1">إحصائيات الشهر السابق</option>
-							<option value="2">إحصائيات أخر عشرة أيام</option>
-							<option value="3">إحصائيات أخر عام </option>
-							<option value="4">إحصائيات الإجمالي</option>
-						</select>
+						<span>فلتر الإحصائات</span>
+						<span >من </span>
+						<input type="date">
+						<span>إلى </span>
+						<input type="date">
 					</div>
 					<div class="row">
-						<div class="col-md-6 col-lg-4 sec1-move">
+						<div class="col-lg-6 col-xl-4 sec1-move">
 							<div class="card ">
 								<h5>المنتجات</h5>
+								<div class="sear">
+									<input type="search" placeholder="اسم المنتج - وصف المنتج">
+									<!-- <input type="search" placeholder="وصف المنتج"> -->
+								</div>
 								<div class="sta">
 									<span class="shop"> <img src="./images/shop.png" alt=""></span>
 									<strong>30</strong>
@@ -295,9 +252,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4 sec1-move">
+						<div class="col-lg-6 col-xl-4 sec1-move">
 							<div class="card ">
 								<h5>الطلبات</h5>
+								<div class="sear wid">
+									<input type="search" placeholder="رقم الطلب - رقم الشحنة- جوال العميل">
+									<!-- <input type="search" placeholder="رقم الشحنة"> -->
+									<!-- <input type="search" placeholder="جوال العميل"> -->
+								</div>
 								<div class="sta">
 									<span class="ti-truck"></span>
 									<strong>10</strong>
@@ -308,7 +270,24 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4 sec1-move">
+						<div class="col-lg-6 col-xl-4 sec1-move">
+							<div class="card ">
+								<h5> العملاء والتقييمات</h5>
+								<div class="sear">
+									<input type="search" placeholder="اسم العميل-جوال العميل">
+									<!-- <input type="search" placeholder="جوال العميل"> -->
+								</div>
+								<div class="sta">
+									<span class="ti-crown"></span>
+									<strong>305</strong>
+									
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-4 sec1-move">
 							<div class="card ">
 								<h5>المبيعات</h5>
 								<div class="sta">
@@ -322,32 +301,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4 sec1-move">
-							<div class="card ">
-								<h5>إجمالي الأرباح</h5>
-								<div class="sta">
-									<span class="fas fa-coins"></span>
-									<strong>200</strong>
-								</div>
-								<div class="view">
-									<a class="btn2 " href="#">عرض الكل </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 sec1-move">
-							<div class="card ">
-								<h5> العملاء والتقييمات</h5>
-								<div class="sta">
-									<span class="ti-crown"></span>
-									<strong>305</strong>
-									
-								</div>
-								<div class="view">
-									<a class="btn2 " href="#">عرض الكل </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4 sec1-move">
+						<div class="col-lg-6 col-xl-4 sec1-move">
 							<div class="card ">
 								<h5>الزيارات</h5>
 								<div class="sta">
@@ -359,63 +313,55 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-lg-6 col-xl-4 sec1-move">
+							<div class="card ">
+								<h5>إجمالي الأرباح</h5>
+								<div class="sta">
+									<span class="fas fa-coins"></span>
+									<strong>200</strong>
+								</div>
+								<div class="view">
+									<a class="btn2 " href="#">عرض الكل </a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="sec2">
-				<div class="container">
-					<div class="sta1-con">
-						<div class="sec2-move s-con">
-							<div class="sta1">
-								<strong>15</strong>
-								<h4>المبيعات</h4>
-								<span>أخر 30 يوم</span>
-							</div>
-						</div>
-						<div class="sec2-move s-con">
-							<div class="sta1">
-								<strong>20</strong>
-								<h4>الطلبات</h4>
-								<span>أخر 30 يوم</span>
-							</div>
-						</div>
-						<div class="sec2-move s-con">
-							<div class="sta1">
-								<strong>250</strong>
-								<h4>الزيارات</h4>
-								<span>أخر 30 يوم</span>
-							</div>
-						</div>
-						<div class="sec2-move s-con">
-							<div class="sta1">
-								<strong>12</strong>
-								<h4>العملاء</h4>
-								<span>أخر 30 يوم</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
 			<div class="sec2">
 				<div class="container">
 					<h5 class="sec2-move">أخر الطلبات</h5>
+					<div class="talab head sec2-move">
+						<div class="img">
+						</div>
+						<div class="infor">
+							<span>الطلب</span>
+							<span>العميل</span>
+							<span>السعر</span>
+							<span>حالة الطلب</span>
+							<span> وقت الطلب</span>
+						</div>
+					</div>
 					<div class="talab sec2-move">
 						<div class="img">
 							<img src="https://picsum.photos/id/0/200/300" alt="">
 						</div>
 						<div class="infor">
 							<span>
-								الطلب: 
+							
 								<a href="#">حاسوب محمول</a>
 							</span>
 							<span>
-								العميل : 
+							
 								<a href="#">محمد الشمري</a>
 							</span>
 							<span>
-								السعر : 
+							
 								<a href="#"><strong>1000</strong> $</a>
 							</span>
+							<span>جاري التنفيذ</span>
+							<span>منذ 20 ساعة</span>
+
 							
 						</div>
 					</div>
@@ -425,17 +371,20 @@
 						</div>
 						<div class="infor">
 							<span>
-								الطلب: 
+							
 								<a href="#">فواكه</a>
 							</span>
 							<span>
-								العميل : 
+							
 								<a href="#">حصة الفايز</a>
 							</span>
 							<span>
-								السعر : 
+							
 								<a href="#"><strong>100</strong> $</a>
 							</span>
+							<span>جاري التنفيذ</span>
+							<span>منذ أسبوع</span>
+
 							
 						</div>
 					</div>
@@ -445,17 +394,20 @@
 						</div>
 						<div class="infor">
 							<span>
-								الطلب: 
+							
 								<a href="#">سيارة أثرية</a>
 							</span>
 							<span>
-								العميل : 
+							
 								<a href="#">سامر الخلف</a>
 							</span>
 							<span>
-								السعر : 
+							
 								<a href="#"><strong>10000</strong> $</a>
 							</span>
+							<span>تم</span>
+							<span>منذ شهر</span>
+
 							
 						</div>
 					</div>
@@ -465,42 +417,215 @@
 						</div>
 						<div class="infor">
 							<span>
-								الطلب: 
+							
 								<a href="#">باقة زهور</a>
 							</span>
 							<span>
-								العميل : 
+							
 								<a href="#">جميل الولهان</a>
 							</span>
 							<span>
-								السعر : 
+							
 								<a href="#"><strong>10</strong>$</a>
 							</span>
+							<span>جاري التنفيذ</span>
+							<span>منذ شهر</span>
+
 							
 						</div>
 					</div>
 					
 				</div>
 			</div>
+			<div class="sec3">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4">
+							<h5 class="sec3-move">الأكثر مبيعاً</h5>
+							<div class="talab head sec3-move">
+								<div class="img">
+								</div>
+								<div class="infor">
+									<span>المنتج</span>
+									<span>الكمية</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1000/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">حاسوب محمول</a></span>
+									<span>5</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/100/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">حقيبة ظهر</a></span>
+									<span>20</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1050/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">حاسوب منزلي</a></span>
+									<span>2</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1008/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">خزانة خشبية</a></span>
+									<span>5</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1012/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">مقعد دراسي</a></span>
+									<span>50</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<h5 class="sec3-move">منتجات قاربت على النفاذ</h5>
+							<div class="talab head sec3-move">
+								<div class="img">
+								</div>
+								<div class="infor">
+									<span>المنتج</span>
+									<span>الكمية</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1000/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">حاسوب محمول</a></span>
+									<span>5</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1050/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">حاسوب منزلي</a></span>
+									<span>2</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/1008/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">خزانة خشبية</a></span>
+									<span>5</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/180/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">طاولة خشبية</a></span>
+									<span>1</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/107/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">مكنسة كهربائية</a></span>
+									<span>1</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4">
+							<h5 class="sec3-move">منتجات نفذت</h5>
+							<div class="talab head sec3-move">
+								<div class="img">
+								</div>
+								<div class="infor">
+									<span>المنتج</span>
+									<span>الكمية</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/155/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">مروحة سقف</a></span>
+									<span>0</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/189/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">مروحة أرضية</a></span>
+									<span>0</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/135/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">براد كبير</a></span>
+									<span>0</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/198/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#">براد صغير</a></span>
+									<span>0</span>
+								</div>
+							</div>
+							<div class="talab sec3-move">
+								<div class="img">
+									<img src="https://picsum.photos/id/155/200/200" alt="">
+								</div>
+								<div class="infor">
+									<span><a href="#"> شئ آخر</a></span>
+									<span>0</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="sec4">
 				<div class="container">
 					<div class="cont">
-						<div class="select sec4-move">
-							<select id="chart1" class="form-select form-select-lg mb-3" aria-label=".form-select-sm ">
+						<div class="select char sec4-move">
+							<select id="chart1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 								<option selected value="0">إحصائيات المنتجات </option>
 								<option value="1">إحصائيات الطلبات </option>
 								<option value="2">إحصائيات المبيعات </option>
 								<option value="3">إجمالي الأرباح</option>
 								<option value="4">إحصائيات الزيارات</option>
 							</select>
-							<select id="chart2" class="form-select form-select-lg mb-3" aria-label=".form-select-sm ">
-								<option selected value="0">آخر عشرة أيام </option>
-								<option value="1">الشهر الحالي</option>
-								<option value="2">الشهر السابق</option>
-								<option value="3">آخر ثلاثه أشهر</option>
-								<option value="4"> آخر سنة</option>
-								<option value="4">الإجمالي</option>
-							</select>
+							<span >من </span>
+							<input type="date">
+							<span>إلى </span>
+							<input type="date">
 						</div>
 						<canvas class="sec4-move" id="myChart"></canvas>
 					</div>
