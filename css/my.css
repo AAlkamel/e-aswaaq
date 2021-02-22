@@ -1154,15 +1154,26 @@ label {
 	border: solid 1px #d6c2dc4a;
 }
 .select span {
-	margin: 0 10px;
+	margin: 0 10px 0 0;
 }
 .select input[type=date] {
 	border-radius: 5px;
 	color: #5a1d5f;
 	outline: none;
-	border: solid 1px #d7c6dd;
-	width: 153px;
-	background-color: #e0e0e06e;
+	border: solid 1px transparent;
+	width: 51px;
+	background-color: transparent;
+	position: relative;
+}
+input::-webkit-calendar-picker-indicator {
+	color: #8f3097;
+	opacity: 0;
+}
+.select input[type=date]::before {
+	position: absolute;
+	content: "\e6b6";
+	font-family: 'themify';
+	right: 5px;
 }
 .select select {
 	color: #8f3097;
