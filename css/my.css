@@ -1342,6 +1342,31 @@ label {
 	margin-top: -6px;
 	display: none;
 }
+.p-menu {
+	position: relative;
+}
+.set .sub-m.sub-m-2 {
+	position: absolute;
+	width: 100%;
+	top: 34px;
+	right: 50%;
+	transform: translateX(50%);
+	padding-top: 5px;
+	margin-top: -6px;
+}
+.set .b-d.b-d-1 span i {
+	position: inherit;
+	right: 15px;
+	top: 10px;
+}
+.b-d.b-d-1 {
+	padding: 0;
+	min-width: auto;
+}
+.b-d.b-d-1 > span {
+	color: #8b2893;
+	margin-left: 0;
+}
 .b-d {
 	padding: 5px 40px;
 	position: relative;
@@ -1371,6 +1396,15 @@ label {
 	border-left: solid transparent;
 	border-right: solid transparent;
 	display: none;
+}
+.b-d.b-d-1::after {
+	bottom: 13px;
+	right: 50%;
+}
+.set .sub-m.sub-m-2 ul li a {
+	padding: 5px 12px;
+	font-size: 14px;
+	text-align: center;
 }
 .b-d:hover .sub-m {
 	display: inherit;
