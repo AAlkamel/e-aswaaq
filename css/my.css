@@ -1912,4 +1912,13 @@ input::-webkit-calendar-picker-indicator {
 		font-weight: bold;
 		font-size: 13px;
 	}
+	.select span {
+		margin: 0 0px 0 0;
+	}
+	.select select {
+		font-size: 13px;
+	}
+	.to {
+		margin-right: -24px;
+	}
 }
