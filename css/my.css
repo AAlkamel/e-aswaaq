@@ -1134,11 +1134,11 @@ label {
 }
 .sec1 h5 {
 	text-align: right;
-	padding-right: 30px;
+	padding-right: 15px;
 	margin-top: 9px;
 	padding-bottom: 12px;
 	margin-bottom: 11px;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 600;
 	color: #ffffff;
 	border-bottom: solid 1px #7b1d86;
@@ -1222,14 +1222,24 @@ label {
 	outline: none;
 	border-radius: 3px;
 	border: solid 1px #d6c2dc3b;
-	width: 41%;
+	width: 45%;
 	height: 20px;
 	color: #d4d4d4;
 	font-size: 13px;
 	padding: 0 2px;
+	padding-left: 15px;
+}
+.card .sear::before {
+	position: absolute;
+	content: "\e610";
+	font-family: 'themify';
+	color: #bfb2c0;
+	font-size: 12px;
+	top: 5px;
+	left: 4px;
 }
 .card .sear.wid input[type=search] {
-	width: 61%;
+	width: 64%;
 }
 .card .sear input[type=search]::placeholder {
 	color: #c1b7c2;
@@ -1514,6 +1524,7 @@ label {
 	border-bottom: dashed 1px #eeeeee1f;
 	transition: ease-out .5s;
 	font-size: 14px;
+	font-weight: 600;
 }
 .manage-menu ul li a:hover {
 	/* text-align: center; */
@@ -1525,6 +1536,7 @@ label {
 .manage-menu ul li a i {
 	position: absolute;
 	right: 15px;
+	top: 14px;
 }
 /* ------------------------------------------ */
 .manage .sec2 {
@@ -1614,30 +1626,6 @@ label {
 	padding-bottom: 15px;
 }
 /* ---------------------manage end------------------------ */
-@media only screen and (max-width: 575px) {
-	main {
-		padding: 0 !important;
-	}
-	.manage .row h6 {
-		padding-bottom: 10px;
-	}
-	.manage .row.setting {
-		margin-left: 1px;
-		margin-right: 1px;
-	}
-	.manage .setting {
-		grid-template-columns: 1fr;
-	}
-	.set.set1 {
-		display: none;
-	}
-	.sec1 {
-		padding-top: 106px;
-	}
-	.manage-menu {
-		padding-top: 124px;
-	}
-}
 @media only screen and (max-width: 991px) {
 	.twasol {
 		margin-top: 21px;
@@ -1839,5 +1827,44 @@ label {
 	}
 	.avatar {
 		margin-top: -6px;
+	}
+}
+@media only screen and (max-width: 575px) {
+	main {
+		padding: 0 !important;
+	}
+	.manage .row h6 {
+		padding-bottom: 10px;
+	}
+	.manage .row.setting {
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+	.manage .setting {
+		grid-template-columns: 1fr;
+	}
+	.set.set1 {
+		padding-top: 5px;
+	}
+	.sec1 {
+		padding-top: 106px;
+	}
+	.manage-menu {
+		padding-top: 124px;
+	}
+	.sec2 .talab {
+		grid-template-columns: 52px auto;
+		padding: 2px;
+	}
+	.sec2 .infor {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+	.infor span {
+		font-size: 12px;
+		text-align: center;
+	}
+	.head .infor span {
+		font-weight: bold;
+		font-size: 13px;
 	}
 }
