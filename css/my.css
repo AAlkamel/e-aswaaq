@@ -188,7 +188,7 @@ a:hover {
 	box-shadow: 0 0 0 0.2rem rgb(154 0 255 / 25%);
 }
 /* --------------------loder start-------------- */
-main {
+.manage main {
 	/* scroll-snap-type: y mandatory;
 	overflow-y: scroll; */
 	max-height: 100vh;
@@ -1032,6 +1032,40 @@ label {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.manage .searc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #5e216366;
+	backdrop-filter: blur(5px);
+	z-index: 11;
+	display: none;
+	padding: 15px;
+}
+.manage .conta {
+	/* min-height: 167px; */
+	margin: 150px auto; /* transform: translateY(-50%); */
+	max-width: 600px;
+	background-color: white;
+	box-shadow: 0 0 9px #67226d4f;
+	border-radius: 5px;
+	text-align: center;
+	padding: 30px;
+	position: relative;
+}
+.manage .conta i {
+	font-size: 13px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: pointer;
+}
+.manage .conta span {
+	color: #8b5e8e;
+	font-size: 18px;
+}
 .manage .t-nav {
 	background: linear-gradient(225deg, #8d0296 0%, #8d0296 100%);
 }
@@ -1057,7 +1091,8 @@ label {
 	min-width: 175px;
 	right: 0px;
 	top: 43px;
-	z-index: 11; /* padding-top: 8px; */
+	z-index: 11;
+	/* padding-top: 8px; */
 	box-shadow: 0 0 8px #1e03212b;
 	display: none;
 }
@@ -1240,7 +1275,7 @@ input::-webkit-calendar-picker-indicator {
 	padding: 0 2px;
 	padding-left: 15px;
 }
-.card .sear::before {
+/* .card .sear::before {
 	position: absolute;
 	content: "\e610";
 	font-family: 'themify';
@@ -1248,6 +1283,20 @@ input::-webkit-calendar-picker-indicator {
 	font-size: 12px;
 	top: 5px;
 	left: 4px;
+} */
+.card .sear i {
+	position: absolute;
+	left: 1px;
+	font-size: 12px;
+	top: 3px;
+	color: #8d0396;
+	background-color: #ffffffcc;
+	width: 17px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
 }
 .card .sear.wid input[type=search] {
 	width: 64%;
@@ -1257,6 +1306,7 @@ input::-webkit-calendar-picker-indicator {
 	font-size: 12px;
 }
 .manage .card {
+	overflow: hidden;
 	position: relative;
 	background: #f4f1f9;
 	background: -webkit-linear-gradient(to left, #8d0296, #821d8e);
@@ -1267,6 +1317,17 @@ input::-webkit-calendar-picker-indicator {
 	backdrop-filter: blur(2px);
 	transition: ease-out .3s;
 	margin-bottom: 30px;
+}
+.manage .card::after {
+	content: "";
+	position: absolute;
+	top: 29px;
+	left: -162px;
+	background-color: #ffffff29;
+	height: 119%;
+	width: 128%;
+	transform: rotateZ(66deg);
+	z-index: -1;
 }
 .manage .card:hover {
 	margin-top: -10px;
@@ -1412,17 +1473,23 @@ input::-webkit-calendar-picker-indicator {
 	bottom: 13px;
 	right: 50%;
 }
+.b-d.b-d-1 {
+	cursor: pointer;
+}
+.b-d.btn1 {
+	cursor: pointer;
+}
 .set .sub-m.sub-m-2 ul li a {
 	padding: 5px 12px;
 	font-size: 14px;
 	text-align: center;
 }
-.b-d:hover .sub-m {
+/* .b-d:hover .sub-m {
 	display: inherit;
 }
 .b-d:hover::after {
 	display: inherit;
-}
+} */
 .set .sub-m ul {
 	list-style: none;
 	margin: 0;
@@ -1627,7 +1694,8 @@ input::-webkit-calendar-picker-indicator {
 	text-align: right;
 }
 .infor span {
-	display: inline-block; /* margin-top: 17px; */
+	display: inline-block;
+	/* margin-top: 17px; */
 	margin-left: 3px;
 	color: #8f3097;
 	font-size: 16px;
@@ -1904,6 +1972,7 @@ input::-webkit-calendar-picker-indicator {
 	}
 	.manage-menu {
 		padding-top: 124px;
+		right: -256px;
 	}
 	.sec2 .talab {
 		grid-template-columns: 52px auto;

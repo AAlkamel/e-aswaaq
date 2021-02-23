@@ -56,6 +56,20 @@ $( document ).ready(function() {
     });
 
         //-------------------------------------------------------
+        $(".b-d.btn1").on("click",function(){
+            $(this).children(".sub-m").slideToggle()
+        })
+        $(".b-d.b-d-1").on("click",function(){
+            $(this).children(".sub-m").slideToggle()
+        })
+        //-------------------------------------------------------
+        $(".card .sear i").on("click",function(){
+            $(".manage .searc").show()
+        })
+        $(".manage .conta i").on("click",function(){
+            $(".manage .searc").hide()
+        })
+        //-------------------------------------------------------
     // $(".ts-bx > span a").on("click",function(e){
     //     e.preventDefault();
     //    // $(".op").hide();
