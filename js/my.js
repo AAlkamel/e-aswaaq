@@ -62,6 +62,13 @@ $( document ).ready(function() {
         $(".b-d.b-d-1").on("click",function(){
             $(this).children(".sub-m").slideToggle()
         })
+        $(document).on("click",function(){
+            $(".sub-m").slideUp();
+        });
+        $('.b-d').on("click",function(e){
+            e.stopPropagation();
+            
+        });
         //-------------------------------------------------------
         $(".card .sear i").on("click",function(){
             $(".manage .searc").show()
