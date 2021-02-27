@@ -1656,6 +1656,9 @@ input::-webkit-calendar-picker-indicator {
 .manage .sec2 {
 	margin: 30px 0 60px;
 }
+.manage .sec2 .container {
+	padding-bottom: 50px;
+}
 .sec2 h5 {
 	text-align: right;
 	color: #5a1d5f;
@@ -1696,7 +1699,8 @@ input::-webkit-calendar-picker-indicator {
 	text-align: right;
 }
 .infor span {
-	display: inline-block; /* margin-top: 17px; */
+	display: inline-block;
+	/* margin-top: 17px; */
 	margin-left: 3px;
 	color: #8f3097;
 	font-size: 16px;
