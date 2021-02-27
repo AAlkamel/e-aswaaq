@@ -77,18 +77,30 @@ $( document ).ready(function() {
             $(".manage .searc").hide()
         })
         //-------------------------------------------------------
-    // $(".ts-bx > span a").on("click",function(e){
-    //     e.preventDefault();
-    //    // $(".op").hide();
-    //     $(this).parent().next().toggle();
-    // });
-    // $(document).on("click",function(){
-    //     $(".op").hide();
-    // });
-    // $('.ts-bx').on("click",function(e){
-    //     e.stopPropagation();
+        $("#ch01").change(function() {
+            var check=document.querySelectorAll(".talab input[type='checkbox']");
+            if(this.checked) {
+                // var check=$(".talab input[type='checkbox']");
+                check.forEach(el => {
+                    el.checked=true
+                });
+            }else{
+                check.forEach(el => {
+                    el.checked=false
+                });
+            }
+        });
+        //-------------------------------------------------------
+        $(".req .talab:not(:nth-child(2))").on('click',function(){
+            window.location.href = "./talab.html";
+        })
         
-    // });
+        //-------------------------------------------------------
+        $('#tala').on('click',function(){
+            $(".talab .sec2").slideToggle();
+        })
+        //-------------------------------------------------------
+    
 
 
     $(".ts-bx > span a").on("click",function(e){
@@ -266,52 +278,19 @@ t14.from('.sec4-move',{y:20, opacity:0, stagger:0.1, duration:0.8},'+=.5')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// var dbData =[0, 10, 5, 2, 20, 30, 45];
-// var dbLabels =['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-    
-    
-
-//-----------------------------chart js
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels:dbLabels,
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: '#8d029657',
-            borderColor: '#8d0299',
-            data: dbData
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-        legend:{
-            display:false,
-        }
+let t15 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'.sec5',
+        start: 'top bottom'
     }
 });
+t15.from('.sec5-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')
+t15.from('.item strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText"},'-=2.7')
+
+
+
+
+
+
 
 });
-// gsap.from(".box", {
-//     scrollTrigger: ".box", // start the animation when ".box" enters the viewport (once)
-//     x: 500
-// });
-
-
-    

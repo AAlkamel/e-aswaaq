@@ -285,7 +285,7 @@
 									
 								</div>
 								<div class="view">
-									<a class="btn2 " href="#">عرض الكل </a>
+									<a class="btn2 " href="./req.html">عرض الكل </a>
 								</div>
 							</div>
 						</div>
@@ -671,6 +671,29 @@
 			<script>
 				var dbData =[0, 10, 5, 2, 20, 30, 45];
 				var dbLabels =['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+				var ctx = document.getElementById('myChart').getContext('2d');
+				var chart = new Chart(ctx, {
+					// The type of chart we want to create
+					type: 'line',
+
+					// The data for our dataset
+					data: {
+						labels:dbLabels,
+						datasets: [{
+							label: 'My First dataset',
+							backgroundColor: '#8d029657',
+							borderColor: '#8d0299',
+							data: dbData
+						}]
+					},
+
+					// Configuration options go here
+					options: {
+						legend:{
+							display:false,
+						}
+					}
+				});
 			</script>
 		</footer>
 	</body>
