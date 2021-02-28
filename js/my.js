@@ -54,6 +54,33 @@ $( document ).ready(function() {
             },400);
         }
     });
+    $(".xs-manage-menu").on("click",function(){
+        if($(".manage-menu").hasClass('collaps')){
+            $(".manage-menu").removeClass('collaps');
+            $("main").animate({
+                'padding-right': '265px',
+                ' padding-left': '15px',
+            },200);
+            $(".manage-menu").animate({
+                "width":"250px"
+            },200);
+            $(".manage-menu.m-m-s ul li a").animate({
+                "right":"0px"
+            },200);
+        }else{
+            $(".manage-menu").addClass('collaps');
+            $("main").animate({
+                'padding-right': '55px',
+                ' padding-left': '15px',
+            },200);
+            $(".manage-menu").animate({
+                "width":"40px"
+            },200);
+            $(".manage-menu.m-m-s ul li a").animate({
+                "right":"209px"
+            },200);
+        }
+    });
 
         //-------------------------------------------------------
         $(".b-d.btn1").on("click",function(){

@@ -1,6 +1,7 @@
 /*
     colors
     
+	
 
  */
 .mac {
@@ -193,6 +194,10 @@ a:hover {
 	overflow-y: scroll; */
 	max-height: 100vh;
 	padding-right: 265px;
+	padding-left: 15px;
+}
+.manage main.iner {
+	padding-right: 55px;
 	padding-left: 15px;
 }
 section {
@@ -1652,6 +1657,32 @@ input::-webkit-calendar-picker-indicator {
 	right: 15px;
 	top: 14px;
 }
+.manage-menu.m-m-s {
+	box-shadow: 0 0 6px #1a021dfc;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	right: 0px;
+	width: 40px;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #8d0296;
+	padding-top: 95px;
+}
+.manage-menu.m-m-s ul li a {
+	text-align: right;
+	color: #f5e4f7;
+	position: relative;
+	padding-right: 45px;
+	padding-left: 15px;
+	border-bottom: dashed 1px #eeeeee1f;
+	transition: ease-out .5s;
+	font-size: 14px;
+	font-weight: 600;
+	overflow-wrap: ;
+	width: 250px;
+	right: 209px;
+}
 /* ------------------------------------------ */
 .manage.talab,
 .manage.req {
@@ -1703,8 +1734,7 @@ input::-webkit-calendar-picker-indicator {
 	text-align: right;
 }
 .infor span {
-	display: inline-block;
-	/* margin-top: 17px; */
+	display: inline-block; /* margin-top: 17px; */
 	margin-left: 3px;
 	color: #8f3097;
 	font-size: 16px;
