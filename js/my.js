@@ -19,6 +19,11 @@ $( document ).ready(function() {
         $(".mac").show();
     }
     // ----------------------------------
+    $('.req .item').on("click",function(){
+        var x =$(this).children("h5").text();
+        $(".sa").text(x)
+    });
+    // ----------------------------------
 
     $(".m-menu span.close").on("click",function(){
         $(".m-menu").animate({
@@ -296,7 +301,7 @@ t11.from('.card strong',{innerText:0, duration:0.8, stagger:0.3, snap:"innerText
 let t12 = gsap.timeline({
     scrollTrigger:{
         trigger:'.sec2',
-        start: 'center bottom'
+        start: 'top bottom'
     }
 });
 t12.from('.sec2-move',{y:20, opacity:0, stagger:0.3, duration:0.8},'+=.5')

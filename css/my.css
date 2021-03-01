@@ -1083,7 +1083,7 @@ label {
 	font-size: 18px;
 }
 .manage .t-nav {
-	background: linear-gradient(225deg, #8d0296 0%, #8d0296 100%);
+	/* background: linear-gradient(225deg, #8d0296 0%, #8d0296 100%); */
 }
 .manage .tm-bx > span a::before {
 	color: #f5e4f7;
@@ -1821,7 +1821,7 @@ input::-webkit-calendar-picker-indicator {
 .sec5 .item {
 	position: relative;
 	overflow: hidden;
-	background: linear-gradient(to left, #8d0296, #821d8e);
+	background: linear-gradient(to left, #94319e, #92399d);
 	border: 1px solid rgb(146 74 170 / 20%);
 	border-radius: 5px;
 	box-shadow: 0 0 5px #260929d1;
@@ -1841,19 +1841,19 @@ input::-webkit-calendar-picker-indicator {
 	position: absolute;
 	top: 29px;
 	left: -147px;
-	background-color: #ffffff1f;
+	background-color: #3333331f;
 	height: 119%;
 	width: 128%;
 	transform: rotateZ(66deg);
 	z-index: -1;
 }
 .item h5 {
-	padding: 15px;
-	font-size: 24px;
+	padding: 10px;
+	font-size: 20px;
 	color: #f2def5;
 }
 .item strong {
-	font-size: 24px;
+	font-size: 20px;
 	color: #f2def5;
 }
 .t-sec2 {
