@@ -2054,6 +2054,38 @@ input::-webkit-calendar-picker-indicator {
 	color: white;
 	filter: grayscale(0.5) hue-rotate(5deg);
 }
+.sear {
+	position: relative;
+}
+.sear input[type=search] {
+	background-color: #eeeeee1f;
+	-webkit-appearance: searchfield;
+	appearance: searchfield;
+	outline-offset: 0;
+	outline: none;
+	border-radius: 3px;
+	border: solid 1px #8b2893;
+	width: 100%;
+	height: 26px;
+	color: #d4d4d4;
+	font-size: 14px;
+	padding: 0 2px;
+	padding-left: 15px;
+}
+.sear i {
+	position: absolute;
+	left: 1px;
+	font-size: 12px;
+	top: 3px;
+	color: #8d0396;
+	background-color: #ffffffcc;
+	width: 17px;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 3px 0 0 3px;
+	cursor: pointer;
+}
 .req .set-sec2 span {
 	font-size: 14px;
 }

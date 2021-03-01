@@ -106,7 +106,7 @@ $( document ).ready(function() {
             
         });
         //-------------------------------------------------------
-        $(".card .sear i").on("click",function(){
+        $(".sear i").on("click",function(){
             $(".manage .searc").show()
         })
         $(".manage .conta i").on("click",function(){
