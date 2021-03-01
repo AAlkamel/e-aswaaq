@@ -96,6 +96,10 @@ $( document ).ready(function() {
             e.stopPropagation();
             
         });
+        $('.set .sub-m.sub-m-3').on("click",function(e){
+            e.stopPropagation();
+            
+        });
         //-------------------------------------------------------
         $(".card .sear i").on("click",function(){
             $(".manage .searc").show()
@@ -123,6 +127,17 @@ $( document ).ready(function() {
         })
         
         //-------------------------------------------------------
+        $('#fato').on('click',function(){
+            $(".talab .sec7").slideToggle();
+        })
+
+
+        $('#sejl').on('click',function(){
+            $(".talab .sec8").slideToggle();
+        })
+
+
+
         $('#tala').on('click',function(){
             $(".talab .sec2").slideToggle();
         })
