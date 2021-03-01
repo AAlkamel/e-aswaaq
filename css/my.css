@@ -2064,7 +2064,7 @@ input::-webkit-calendar-picker-indicator {
 	outline-offset: 0;
 	outline: none;
 	border-radius: 3px;
-	border: solid 1px #8b2893;
+	border: solid 1px #d5bad8;
 	width: 100%;
 	height: 26px;
 	color: #94389a;
@@ -2072,7 +2072,66 @@ input::-webkit-calendar-picker-indicator {
 	padding: 0 2px;
 	padding-left: 15px;
 }
+.new input[type=submit] {
+	width: 200px;
+}
+.do-flex {
+	display: grid;
+	grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+	flex-wrap: wrap;
+	padding: 7px;
+	padding-top: 14px;
+	border-bottom: dashed 1px #eee;
+}
+.do-flex .btn2 {
+	width: 100%;
+	height: 26px;
+	font-size: 14px;
+	padding: 0;
+	text-align: center;
+	line-height: 23px;
+	border-radius: 3px;
+	border: solid 1px #d5bad8;
+	background-color: #f3f4f4;
+}
+.do-flex h6 {
+	margin-left: 15px;
+	color: #8b2893;
+}
+.new input {
+	background-color: #eeeeee1f;
+	-webkit-appearance: searchfield;
+	appearance: searchfield;
+	outline-offset: 0;
+	outline: none;
+	border-radius: 3px;
+	border: solid 1px #d5bad8;
+	width: 100%;
+	height: 26px;
+	color: #94389a;
+	font-size: 14px;
+	padding: 0 2px;
+	padding-left: 15px;
+	background-color: #f3f4f4;
+}
+.new input[type="checkbox"] {
+	width: auto;
+	margin: 0;
+	background-color: #f3f4f4;
+	border: solid 1px #d5bad8;
+}
+.new .labla {
+	position: absolute;
+	top: -5px;
+	margin-right: 5px;
+}
+.sec6 .do-flex select {
+	border-radius: 3px;
+	font-size: 15px;
+	width: 100%;
+}
 .sear i {
+	padding: 0;
 	position: absolute;
 	left: 1px;
 	font-size: 12px;
@@ -2326,6 +2385,12 @@ input::-webkit-calendar-picker-indicator {
 	}
 }
 @media only screen and (max-width: 575px) {
+	.do-flex {
+		display: grid;
+		grid-template-columns: 1fr;
+		flex-wrap: wrap;
+		padding: 7px;
+	}
 	.sec6 .set .sub-m.sub-m-3 {
 		width: 252px;
 		right: 109px;
