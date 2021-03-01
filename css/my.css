@@ -1860,6 +1860,7 @@ input::-webkit-calendar-picker-indicator {
 	display: flex;
 	justify-content: space-between;
 	direction: rtl;
+	flex-wrap: wrap;
 }
 .t-sec2 select {
 	color: #8f3097;
@@ -2299,6 +2300,10 @@ input::-webkit-calendar-picker-indicator {
 	}
 	.t-sec2 .btn2 {
 		font-size: 12px;
+		padding: 3px 3px;
+	}
+	.t-sec2 {
+		margin-bottom: 10px;
 	}
 	.req .sec2 h5 {
 		font-size: 20px;
