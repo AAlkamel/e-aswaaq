@@ -2052,7 +2052,10 @@ input::-webkit-calendar-picker-indicator {
 	font-size: 18px;
 	border-right: solid 2px #654a67;
 	color: white;
-	filter: grayscale(0.5) hue-rotate(404deg);
+	filter: grayscale(0.5) hue-rotate(5deg);
+}
+.req .set-sec2 span {
+	font-size: 14px;
 }
 .cord .sejel .state:not(:last-child) h6::before {
 	position: absolute;
