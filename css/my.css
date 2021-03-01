@@ -2026,12 +2026,57 @@ input::-webkit-calendar-picker-indicator {
 	display: flex;
 	flex-direction: column;
 }
+.sec8 {
+	padding-bottom: 1px;
+	display: none;
+}
 .cord .sejel {
-	padding: 15px;
+	padding: 15px 30px;
 	border: solid 1PX #8d029630;
 	border-radius: 5px;
 	backdrop-filter: blur(14px);
 	background-color: #fdfdfd52;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.cord .sejel .state {
+	margin-bottom: 20px;
+}
+.cord .sejel h6 {
+	position: relative;
+}
+.cord .sejel h6 span {
+	padding: 3px 9px 5px;
+	background-color: #e7d7e8;
+	font-size: 18px;
+	border-right: solid 2px #654a67;
+	color: white;
+	filter: grayscale(0.5) hue-rotate(404deg);
+}
+.cord .sejel .state:not(:last-child) h6::before {
+	position: absolute;
+	content: "";
+	width: 1px;
+	top: 5px;
+	right: -13px;
+	height: 74px;
+	color: beige;
+	border-radius: 10px;
+	background-color: #aaa7ab;
+}
+.cord .sejel h6::after {
+	position: absolute;
+	content: "";
+	top: 5px;
+	right: -18px;
+	width: 11px;
+	height: 11px;
+	color: beige;
+	border-radius: 10px;
+	background-color: #654a67;
+}
+.state div span {
+	color: #7e6786;
 }
 .cord .bill.en {
 	direction: ltr;
