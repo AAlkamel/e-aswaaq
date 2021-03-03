@@ -1871,7 +1871,10 @@ input::-webkit-calendar-picker-indicator {
 }
 .talab input[type="checkbox"] {
 	margin-top: 12px;
-	filter: hue-rotate(69deg);
+}
+input[type="checkbox"],
+input[type=radio] {
+	filter: hue-rotate(57deg);
 }
 /* -----------------------talab--------------- */
 .sec6 {
@@ -2072,16 +2075,15 @@ input::-webkit-calendar-picker-indicator {
 	padding: 0 2px;
 	padding-left: 15px;
 }
-.new input[type=submit] {
-	width: 200px;
+.new input[type=radio] {
+	width: auto;
+	margin-right: 10px;
 }
 .do-flex {
 	display: grid;
-	grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+	grid-template-columns: 144px 1fr 1fr;
 	flex-wrap: wrap;
-	padding: 7px;
 	padding-top: 14px;
-	border-bottom: dashed 1px #eee;
 }
 .do-flex .btn2 {
 	width: 100%;
@@ -2099,20 +2101,18 @@ input::-webkit-calendar-picker-indicator {
 	color: #8b2893;
 }
 .new input {
-	background-color: #eeeeee1f;
-	-webkit-appearance: searchfield;
-	appearance: searchfield;
-	outline-offset: 0;
 	outline: none;
 	border-radius: 3px;
 	border: solid 1px #d5bad8;
 	width: 100%;
-	height: 26px;
 	color: #94389a;
 	font-size: 14px;
-	padding: 0 2px;
+	padding: 3px 5px;
 	padding-left: 15px;
 	background-color: #f3f4f4;
+}
+.new input::placeholder {
+	font-size: 13px;
 }
 .new input[type="checkbox"] {
 	width: auto;
@@ -2179,6 +2179,140 @@ input::-webkit-calendar-picker-indicator {
 }
 .cord .bill > div {
 	margin: 5px 0;
+}
+/* ----------------------talab-new---------------------- */
+.sec9 {
+	padding-top: 120px;
+	direction: rtl;
+	text-align: right;
+}
+.sec9 h5 {
+	color: #5a1d5f;
+	font-size: 25px;
+}
+.sec9 ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 800px;
+	margin: 20px auto;
+}
+.sec9 ul li {
+	position: relative;
+	padding: 5px 15px;
+	border: solid 1px #7c677d59;
+	border-radius: 5px;
+	background-color: #ffffff94;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	color: #a49ba5;
+	cursor: pointer;
+}
+.sec9 ul li:not(:last-child):before {
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 3px;
+	left: -12px;
+	top: 16px;
+	background-color: #7c677d59;
+}
+.sec9 ul li.active {
+	border: solid 1px #674092;
+	background-color: #6f0377c4;
+	color: #ffffff;
+}
+.sec9 .body {
+	max-width: 750px;
+	min-height: 250px;
+	padding: 15px;
+	margin: 20px auto;
+	background-color: #ffffff99;
+	border-radius: 5px;
+	border: solid 1px #d6c2dc4a;
+	backdrop-filter: blur(13px);
+}
+.body .input {
+	position: relative;
+	width: 100%;
+}
+.body select.form-select {
+	width: 100%;
+	color: #94389a;
+	padding: 4px;
+	border-radius: 5px;
+	border: solid 1px #8f30974a;
+	background-color: #e0e0e042;
+	font-size: 14px;
+	outline: none;
+}
+.t-left {
+	text-align: left;
+}
+.seen2,
+.seen3,
+.seen4,
+.seen5,
+.seen6 {
+	display: none;
+}
+.body .input select {
+	position: absolute;
+	left: 0;
+	border: none;
+	height: 100%;
+	appearance: none;
+	padding: 0 5px;
+	background-color: transparent;
+	color: #868686;
+	font-size: 14px;
+	border-right: solid 1px #e6caf2;
+}
+.new label {
+	font-size: 14px;
+	line-height: 11px;
+}
+.sec9 .talab {
+	background-color: #f4f4f4;
+	display: grid;
+	grid-template-columns: 75px auto;
+	direction: rtl;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-bottom: solid 1px #d6bbd9;
+	transition: ease-out .3s;
+}
+.sec9 .infor {
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	text-align: right;
+}
+.sec9 .talab.etma .infor {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+	text-align: right;
+}
+.new input.cobon {
+	width: 120px;
+}
+.infor span.ti-trash::before {
+	cursor: pointer;
+}
+.sec9 .img {
+	width: 40px;
+	height: 40px;
+	margin-left: 30px;
+	border-radius: 4px;
+	overflow: hidden;
+	filter: grayscale(.5);
+}
+.sec9 .img img {
+	object-fit: cover;
+	width: 100%;
+}
+.sec9 .talab.etma {
+	grid-template-columns: auto;
 }
 /* ---------------------manage end------------------------ */
 @media only screen and (max-width: 991px) {
@@ -2464,5 +2598,21 @@ input::-webkit-calendar-picker-indicator {
 	}
 	.to {
 		margin-right: -24px;
+	}
+	.sec9 ul li {
+		padding: 1px 3px;
+		font-size: 13px;
+		margin-left: 5px;
+	}
+	.sec9 ul li:not(:last-child):before {
+		width: 7px;
+		left: -7px;
+		top: 10px;
+	}
+	.sec9 {
+		padding-top: 130px;
+	}
+	.sec9 h5 {
+		font-size: 20px;
 	}
 }

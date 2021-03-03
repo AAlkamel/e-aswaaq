@@ -176,80 +176,411 @@
 		</header>
 
 		<main class="iner">
-			<div class="sec6">
-				<div class="container">
-					<form action="">
-						<h5 class="  "> إضافة طلب جديد</h5>
-					<div class="information">
-						<div class="do-flex">
-							<h6>العميل:</h6>
-							<div class="sear ml-3 mb-2">
-								<i class="ti-search"></i>
-								<input type="search" placeholder="اسم الطلب - وصف الطلب">
-							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="عميل جديد +">
-							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="مستلم جديد +">
-							</div>
+			<div class="container">
+				<div class="sec9">
+						<div class="head">
+							<h5>إضافة طلب</h5>
+							<ul>
+								<li class="active">العميل</li>
+								<li class="">المستلم</li>
+								<li class="">بيانات الشحن</li>
+								<li class="">بيانات الدفع</li>
+								<li class="">اختيار المنتج</li>
+								<li class="">إتمام الطلب</li>
+							</ul>
 						</div>
-						<div class="do-flex">
-							<h6>العنوان:</h6>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="الدولة">
+						<div class="body">
+							<div class="seen1">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<h6>العميل</h6>
+										</div>
+										<div class="col-md-6">
+											<div class="sear">
+												<i class="ti-search"></i>
+												<input type="search" placeholder="اسم الطلب - وصف الطلب">
+												<!-- <input type="search" placeholder="وصف المنتج"> -->
+											</div>
+										</div>
+									</div>
+									
+									
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="الاسم الأول">
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="اسم العائلة">
+									</div>
+									<div class="col-md-12 mb-2">
+										<input type="email" placeholder="البريد الإلكتروني">
+									</div>
+									<div class="col-md-6 mb-2">
+										<div class="input ">
+											<select name="" id="">
+												<option value="+966">966+</option>
+												<option value="+965">965+</option>
+												<option value="+974">974+</option>
+												<option value="+973">973+</option>
+												<option value="+968">968+</option>
+												<option value="+971">971+</option>
+											</select>
+											<!-- <span class="ti-mobile"></span> -->
+											<input class="w-100" type="tel" placeholder="رقم الجوال">
+										</div>
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">تصنيف العميل</option>
+											<option value="1">التصنيف الأول</option>
+											<option value="2"> التصنيف الثاني</option>
+											<option value="3">التصنيف الثالث </option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6 mb-2">
+											<h6>العنوان</h6>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">الدولة</option>
+											<option value="1">السعودية</option>
+											<option value="2">الكويت</option>
+											<option value="3">البحرين</option>
+										</select>
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">المدينة</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="الحي">
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="email" placeholder="أضف وصف">
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="المدينة">
+							<div class="seen2">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="do-flex">
+												<h6>المستلم</h6>
+												<div>
+													<input name="mos" id="cos" type="radio">
+													<label for="cos">العميل نفسه</label>
+												</div>
+												<div>
+													<input name="mos" id="gift" type="radio">
+													<label for="gift">مرسل كهدية</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="الاسم الأول">
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="اسم العائلة">
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="email" placeholder="البريد الإلكتروني">
+									</div>
+									<div class="col-md-6 mb-2">
+										<div class="input ">
+											<select name="" id="">
+												<option value="+966">966+</option>
+												<option value="+965">965+</option>
+												<option value="+974">974+</option>
+												<option value="+973">973+</option>
+												<option value="+968">968+</option>
+												<option value="+971">971+</option>
+											</select>
+											<!-- <span class="ti-mobile"></span> -->
+											<input class="w-100" type="tel" placeholder="رقم الجوال">
+										</div>
+									</div>
+									
+								</div>
+								<br>
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6 mb-2">
+											<h6>العنوان</h6>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">الدولة</option>
+											<option value="1">السعودية</option>
+											<option value="2">الكويت</option>
+											<option value="3">البحرين</option>
+										</select>
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">المدينة</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="text" placeholder="الحي">
+									</div>
+									<div class="col-md-6 mb-2">
+										<input type="email" placeholder="أضف وصف">
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="الحي">
+							<div class="seen3">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<h6>بيانات الشحن</h6>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">طريقة الدفع</option>
+											<option value="1">تحويل بنكي</option>
+											<option value="2">الدفع عند الإستلام</option>
+											<option value="3">باي بال </option>
+											<option value="4"> تابي</option>
+											<option value="5"> أبل باي</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="">
+												<h6>عمولة الدفع عند الإستلام</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<input class="" type="number" placeholder="مقدار العمولة">
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">ريال</option>
+											<option value="1">دولار</option>
+										</select>
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="text" placeholder="أدخل وصف">
+							<div class="seen4">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="do-flex">
+												<h6>بيانات الدفع</h6>
+												<div>
+													<input name="cost" id="don" type="radio">
+													<label for="don">تم الدفع</label>
+												</div>
+												<div>
+													<input name="cost" id="undon" type="radio">
+													<label for="undon">لم يتم الدفع</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">طريقة الدفع</option>
+											<option value="1">تحويل بنكي</option>
+											<option value="2">الدفع عند الإستلام</option>
+											<option value="3">باي بال </option>
+											<option value="4"> تابي</option>
+											<option value="5"> أبل باي</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="">
+												<h6>عمولة الدفع عند الإستلام</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-2">
+										<input class="" type="number" placeholder="مقدار العمولة">
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">ريال</option>
+											<option value="1">دولار</option>
+										</select>
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-						</div>
-						<div class="do-flex">
-							<h6>المنتج:</h6>
-							<div class="sear ml-3 mb-2">
-								<i class="ti-search"></i>
-								<input type="search" placeholder="اسم المنتج - وصف المنتج">
+							<div class="seen5">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<h6>اختيار المنتج</h6>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="sear">
+											<i class="ti-search"></i>
+											<input type="search" placeholder="اسم الطلب - وصف الطلب">
+											<!-- <input type="search" placeholder="وصف المنتج"> -->
+										</div>
+									</div>
+									<div class="col-md-6 mb-2">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">استعراض المنتجات</option>
+											<option value="1">المنتج الأول</option>
+											<option value="2"> المنتج الثاني</option>
+											<option value="3">المنتج الثالث </option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="talab head  ">
+									<div class="img">
+										
+									</div>
+									<div class="infor">
+										<span>الطلب</span>
+										<span>الكمية</span>
+										<span>السعر</span>
+										<span>حذف</span>
+									</div>
+								</div>
+								<div class="talab  ">
+									<div class="img">
+										<img src="https://picsum.photos/id/1050/200/200" alt="">
+									</div>
+									<div class="infor">
+										<span>
+											<a href="#">حاسوب محمول</a>
+										</span>
+										<span>1</span>
+										<span>
+											<a href="#"><strong>1000</strong> $</a>
+										</span>
+										<span class="ti-trash"></span>
+			
+										
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-							<div class="sear ml-3 mb-2">
-								<span class="btn2"><a href="#">استعراض المنتجات</a></span>
+							<div class="seen6">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<h6>اتمام الطلب</h6>
+										</div>
+									</div>
+								</div>
+								<div class="talab head  etma">
+									<div class="infor">
+										<span>الطلب</span>
+										<span>الكمية</span>
+										<span>سعر الواحدة</span>
+										<span>سعر الشحن</span>
+										<span>الضريبة</span>
+									</div>
+								</div>
+								<div class="talab etma ">
+									
+									<div class="infor">
+										<span>
+											<a href="#">حاسوب محمول</a>
+										</span>
+										<span>1</span>
+										<span>
+											<a href="#"><strong>3500</strong> $</a>
+										</span>
+										<span>
+											<a href="#"><strong>25</strong> $</a>
+										</span>
+										<span>
+											<a href="#"><strong>25</strong> $</a>
+										</span>
+									</div>
+								</div>
+								<div class="mt-2">
+									<span><a href=""> كوبون الخصم</a></span>
+									<br>
+								</div>
+								<div class="mt-2">
+									<span class="ml-2">
+										<span><a href=""> %</a></span>
+										<input class="cobon" type="number" min="0" max="100" placeholder="نسبة الخصم">
+									</span>
+									<span>
+										<input class="cobon" type="text" placeholder="كود الخصم">
+									</span>
+								</div>
+								<div class="mt-2 mb-4 text-left">
+									<span><a href="">الإجمالي:</a> </span>
+									<span>
+										<a href="#"><strong>3550</strong> $</a>
+									</span>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 inc">التالي</span>
+									<span class="btn2 dec">السابق</span>
+								</div>
 							</div>
-							
-						</div>
-						<div class="do-flex">
-							<h6>الدفع:</h6>
-							<div class="sear ml-3 mb-2">
-								<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
-									<option selected value="0">طريقة الدفع</option>
-									<option value="1">تحويل بنكي</option>
-									<option value="2">الدفع عند الإستلام</option>
-									<option value="3">باي بال </option>
-									<option value="4"> تابي</option>
-									<option value="5"> أبل باي</option>
-								</select>
-							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="checkbox"> <span class="labla">تم الدفع</span>
-							</div>
-							<div class="sear ml-3 mb-2">
-								<input type="checkbox"> <span class="labla">لم يتم الدفع</span>
-							</div>
-							
-						</div>
-						<div class="mt-3 text-center">
-							<input type="submit" value="تأكيد">
 						</div>
 					</div>
-					
-					</form>
-					
 				</div>
-			</div>
-			</div>
 		</main>
 		<footer>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
