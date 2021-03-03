@@ -2224,8 +2224,7 @@ input[type=radio] {
 	color: #ffffff;
 }
 .sec9 .body {
-	max-width: 750px;
-	/* min-height: 250px; */
+	max-width: 750px; /* min-height: 250px; */
 	padding: 15px;
 	margin: 20px auto;
 	background-color: #ffffff99;
@@ -2313,6 +2312,9 @@ input[type=radio] {
 }
 .sec9 .talab.etma {
 	grid-template-columns: auto;
+}
+.set01 {
+	display: none;
 }
 /* ---------------------manage end------------------------ */
 @media only screen and (max-width: 991px) {
