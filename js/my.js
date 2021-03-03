@@ -198,7 +198,7 @@ $( document ).ready(function() {
         $(".inc").on('click',function(){
             if(tCounter<5){
                 tCounter++;
-                stut=tCounter;
+                if(stut<tCounter) stut=tCounter;
                 $('.body').children().slideUp();
 
                 chil = document.querySelector('.body').children[tCounter].classList[0];
