@@ -2286,7 +2286,7 @@ input[type=radio] {
 	width: 100%;
 	color: #857688;
 	padding: 8px;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: solid 1px #d1cec8;
 	background-color: #e0e0e042;
 	font-size: 14px;
@@ -2304,7 +2304,7 @@ input[type=radio] {
 	height: auto;
 	color: #857688;
 	font-size: 14px;
-	padding: 5px;
+	padding: 6px;
 	padding-left: 15px;
 }
 .new .sear i {
@@ -2317,7 +2317,7 @@ input[type=radio] {
 	background-color: #ffffffcc;
 	width: 30px;
 	text-align: center;
-	height: 31px;
+	height: 32px;
 	line-height: 33px;
 	border-radius: 3px 0 0 3px;
 	cursor: pointer;
@@ -2327,6 +2327,16 @@ input[type=radio] {
 	position: absolute;
 	left: 15px;
 	bottom: 15px;
+}
+.new.btn1 {
+	background-color: #8b2893;
+	color: aliceblue;
+	border-radius: 5px;
+	padding: 4px 15px;
+	border: solid 1px #8b2893;
+	transition: ease-out .3s;
+	cursor: pointer;
+	font-size: 14px;
 }
 .seen2,
 .seen3,
