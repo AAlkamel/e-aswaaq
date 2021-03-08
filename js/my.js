@@ -231,9 +231,9 @@ $( document ).ready(function() {
     //---------------------------------------------
     $('input[type=radio][name=mos]').change(function () { 
         if(this.value==0){
-            $(".mos").slideUp()
+          //  $(".mos").slideUp()
         }else{
-            $(".mos").slideDown()
+          //  $(".mos").slideDown()
         }
     });
     //---------------------------------------------

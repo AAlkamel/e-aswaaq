@@ -179,13 +179,13 @@
 			<div class="container">
 				<div class="sec9">
 						<div class="head">
-							<h5>إضافة طلب</h5>
+							<h5>إضافة طلب جديد</h5>
 							<ul>
 								<li data-no="0" class="active">العميل</li>
-								<li data-no="1" class="">المستلم</li>
-								<li data-no="2" class="">بيانات الشحن</li>
-								<li data-no="3" class="">بيانات الدفع</li>
-								<li data-no="4" class="">اختيار المنتج</li>
+								<li data-no="1" class="">عنوان المستلم</li>
+								<li data-no="2" class="">اختيار المنتج</li>
+								<li data-no="3" class="">بيانات الشحن</li>
+								<li data-no="4" class="">بيانات الدفع</li>
 								<li data-no="5" class="">إتمام الطلب</li>
 							</ul>
 						</div>
@@ -194,28 +194,29 @@
 								<div class="top">
 									<div class="row">
 										<div class="col-md-6">
-											<h6>العميل</h6>
-										</div>
-										<div class="col-md-6">
-											<div class="sear">
+											<div class="s-f-c">
+												<h6>العميل</h6>
+												<div class="sear">
 												<i class="ti-search"></i>
-												<input type="search" placeholder="اسم الطلب - وصف الطلب">
+												<input type="search" placeholder="اسم العميل - رقم جوال العميل">
 												<!-- <input type="search" placeholder="وصف المنتج"> -->
 											</div>
+											</div>
+											
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="الاسم الأول">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="اسم العائلة">
 									</div>
-									<div class="col-md-12 mb-2">
+									<div class="col-md-12 mb-3">
 										<input type="email" placeholder="البريد الإلكتروني">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<div class="input ">
 											<select name="" id="">
 												<option value="+966">966+</option>
@@ -229,7 +230,7 @@
 											<input class="w-100" type="tel" placeholder="رقم الجوال">
 										</div>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">تصنيف العميل</option>
 											<option value="1">التصنيف الأول</option>
@@ -246,7 +247,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">الدولة</option>
 											<option value="1">السعودية</option>
@@ -254,7 +255,7 @@
 											<option value="3">البحرين</option>
 										</select>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">المدينة</option>
 											<option value="1">1</option>
@@ -262,15 +263,15 @@
 											<option value="3">3</option>
 										</select>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="الحي">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="email" placeholder="أضف وصف">
 									</div>
 								</div>
 								<div class="mt-2 t-left">
-									<span class="btn1 dec">السابق</span>
+									<span class="btn2 dec">الخطوة السابقة</span>
 									<span class="btn1 inc">التالي</span>
 								</div>
 							</div>
@@ -279,7 +280,7 @@
 									<div class="row">
 										<div class="col-md-6">
 											<div class="do-flex">
-												<h6>المستلم</h6>
+												<h6>عنوان المستلم</h6>
 												<div>
 													<input name="mos" id="cos" type="radio" value="0">
 													<label for="cos">العميل نفسه</label>
@@ -293,16 +294,16 @@
 									</div>
 								</div>
 								<div class="row mos">
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="الاسم الأول">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="اسم العائلة">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="email" placeholder="البريد الإلكتروني">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<div class="input ">
 											<select name="" id="">
 												<option value="+966">966+</option>
@@ -321,13 +322,13 @@
 								<br>
 								<div class="top mos">
 									<div class="row">
-										<div class="col-md-6 mb-2">
+										<div class="col-md-6 mb-3">
 											<h6>العنوان</h6>
 										</div>
 									</div>
 								</div>
 								<div class="row mos">
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">الدولة</option>
 											<option value="1">السعودية</option>
@@ -335,7 +336,7 @@
 											<option value="3">البحرين</option>
 										</select>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">المدينة</option>
 											<option value="1">1</option>
@@ -343,120 +344,15 @@
 											<option value="3">3</option>
 										</select>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="text" placeholder="الحي">
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<input type="email" placeholder="أضف وصف">
 									</div>
 								</div>
 								<div class="mt-2 t-left">
-									<span class="btn1 dec">السابق</span>
-									<span class="btn1 inc">التالي</span>
-								</div>
-							</div>
-							<div class="seen3">
-								<div class="top">
-									<div class="row">
-										<div class="col-md-6">
-											<h6>بيانات الشحن</h6>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6 mb-2">
-										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
-											<option selected value="0">طريقة الشحن</option>
-											<option value="1">طريقة</option>
-											<option value="2">طريقة</option>
-											<option value="3">طريقة</option>
-											<option value="4">طريقة</option>
-											<option value="5">طريقة</option>
-										</select>
-									</div>
-								</div>
-								<br>
-								<div class="top">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="">
-												<h6>عمولة الدفع عند الإستلام</h6>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6 mb-2">
-										<input class="" type="number" min="0" placeholder="مقدار العمولة">
-									</div>
-									<div class="col-md-6 mb-2">
-										<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
-											<option selected value="0">ريال</option>
-											<option value="1">دولار</option>
-										</select>
-									</div>
-								</div>
-								<div class="mt-2 t-left">
-									<span class="btn1 dec">السابق</span>
-									<span class="btn1 inc">التالي</span>
-								</div>
-							</div>
-							<div class="seen4">
-								<div class="top">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="do-flex">
-												<h6>بيانات الدفع</h6>
-												<div>
-													<input name="cost" id="don" type="radio">
-													<label for="don">تم الدفع</label>
-												</div>
-												<div>
-													<input name="cost" id="undon" type="radio">
-													<label for="undon">لم يتم الدفع</label>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-6 mb-2">
-										<select id="set01" class="form-select form-select-lg " aria-label=".form-select-sm ">
-											<option selected value="0">طريقة الدفع</option>
-											<option value="1">تحويل بنكي</option>
-											<option value="2">الدفع عند الإستلام</option>
-											<option value="3">باي بال </option>
-											<option value="4"> تابي</option>
-											<option value="5"> أبل باي</option>
-										</select>
-									</div>
-								</div>
-								<br>
-								<div class="top set01">
-									<div class="row">
-										<div class="col-md-6">
-											<div class="">
-												<h6>عمولة الدفع عند الإستلام</h6>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="set01">
-									<div class="row ">
-										<div class="col-md-6 mb-2">
-											<input class="" type="number" min="0" placeholder="مقدار العمولة">
-										</div>
-										<div class="col-md-6 mb-2">
-											<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
-												<option selected value="0">ريال</option>
-												<option value="1">دولار</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								
-								<div class="mt-2 t-left">
-									<span class="btn1 dec">السابق</span>
+									<span class="btn2 dec">الخطوة السابقة</span>
 									<span class="btn1 inc">التالي</span>
 								</div>
 							</div>
@@ -476,7 +372,7 @@
 											<!-- <input type="search" placeholder="وصف المنتج"> -->
 										</div>
 									</div>
-									<div class="col-md-6 mb-2">
+									<div class="col-md-6 mb-3">
 										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
 											<option selected value="0">استعراض المنتجات</option>
 											<option value="1">المنتج الأول</option>
@@ -515,10 +411,116 @@
 									</div>
 								</div>
 								<div class="mt-2 t-left">
-									<span class="btn1 dec">السابق</span>
+									<span class="btn2 dec">الخطوة السابقة</span>
 									<span class="btn1 inc">التالي</span>
 								</div>
 							</div>
+							<div class="seen3">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<h6>بيانات الشحن</h6>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<select id="set1" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">طريقة الشحن</option>
+											<option value="1">طريقة</option>
+											<option value="2">طريقة</option>
+											<option value="3">طريقة</option>
+											<option value="4">طريقة</option>
+											<option value="5">طريقة</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="">
+												<h6>عمولة الدفع عند الإستلام</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<input class="" type="number" min="0" placeholder="مقدار العمولة">
+									</div>
+									<div class="col-md-6 mb-3">
+										<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">ريال</option>
+											<option value="1">دولار</option>
+										</select>
+									</div>
+								</div>
+								<div class="mt-2 t-left">
+									<span class="btn2 dec">الخطوة السابقة</span>
+									<span class="btn1 inc">التالي</span>
+								</div>
+							</div>
+							<div class="seen4">
+								<div class="top">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="do-flex">
+												<h6>بيانات الدفع</h6>
+												<div>
+													<input name="cost" id="don" type="radio">
+													<label for="don">تم الدفع</label>
+												</div>
+												<div>
+													<input name="cost" id="undon" type="radio">
+													<label for="undon">لم يتم الدفع</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<select id="set01" class="form-select form-select-lg " aria-label=".form-select-sm ">
+											<option selected value="0">طريقة الدفع</option>
+											<option value="1">تحويل بنكي</option>
+											<option value="2">الدفع عند الإستلام</option>
+											<option value="3">باي بال </option>
+											<option value="4"> تابي</option>
+											<option value="5"> أبل باي</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<div class="top set01">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="">
+												<h6>عمولة الدفع عند الإستلام</h6>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="set01">
+									<div class="row ">
+										<div class="col-md-6 mb-3">
+											<input class="" type="number" min="0" placeholder="مقدار العمولة">
+										</div>
+										<div class="col-md-6 mb-3">
+											<select id="set1" class=" form-select form-select-lg " aria-label=".form-select-sm ">
+												<option selected value="0">ريال</option>
+												<option value="1">دولار</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								
+								<div class="mt-2 t-left">
+									<span class="btn2 dec">الخطوة السابقة</span>
+									<span class="btn1 inc">التالي</span>
+								</div>
+							</div>
+							
 							<div class="seen6">
 								<div class="top">
 									<div class="row">
@@ -567,7 +569,7 @@
 										<input class="cobon" type="text" placeholder="كود الخصم">
 									</span>
 								</div>
-								<div class="mt-2 mb-4 text-left">
+								<div class="mt-2 mb-3 text-left">
 									<span><a href="">الإجمالي:</a> </span>
 									<span>
 										<a href="#"><strong>3550</strong> $</a>
@@ -575,7 +577,7 @@
 								</div>
 								<div class="mt-2 t-left">
 									
-									<span class="btn1 dec">السابق</span>
+									<span class="btn2 dec">السابق</span>
 									<span class="btn1 inc">اتمام الطلب</span>
 								</div>
 							</div>
